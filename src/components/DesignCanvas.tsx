@@ -294,7 +294,17 @@ export function DesignCanvas({
 
   const onMouseMove = (e: KonvaEventObject<MouseEvent>) => {
     const it = interaction.current
-    if (it.mode === 'none') return
+    const cont = e.target.getStage()?.container()
+    if (it.mode === 'none') {
+      // Live hover cursor (updates even when the pointer is already over a seat
+      // that just became selected — fixes the missing "move" icon).
+      if (cont && s.tool === 'select') cont.style.cursor = hoverCursor(e.target, selected, space)
+      return
+    }
+    if (cont) {
+      if (it.mode === 'move' || it.mode === 'move-floor' || it.mode === 'move-label' || it.mode === 'arc-center') cont.style.cursor = 'move'
+      else if (it.mode === 'resize-canvas') cont.style.cursor = edgeCursor(it.edge)
+    }
     const scr = pointer(e)
     const world = toWorld(scr)
 
@@ -534,8 +544,6 @@ export function DesignCanvas({
               stroke="#0ea5e9"
               strokeWidth={1 / scale}
               dash={[6 / scale, 4 / scale]}
-              onMouseEnter={(ev) => setContainerCursor(ev, 'move')}
-              onMouseLeave={(ev) => setContainerCursor(ev, '')}
             />
           )}
           {plan.seats.map((seat) => {
@@ -558,10 +566,6 @@ export function DesignCanvas({
                   fill={fill}
                   stroke={isSel ? '#0ea5e9' : '#1f2937'}
                   strokeWidth={isSel ? 2.5 / scale : 0.75 / scale}
-                  onMouseEnter={(ev) =>
-                    s.tool === 'select' && setContainerCursor(ev, isSel ? 'move' : 'pointer')
-                  }
-                  onMouseLeave={(ev) => setContainerCursor(ev, '')}
                 />
                 {showThis && (
                   <Text
@@ -839,6 +843,17 @@ function edgeCursor(edge: ResizeEdge): string {
 function setContainerCursor(ev: KonvaEventObject<MouseEvent>, cursor: string): void {
   const c = ev.target.getStage()?.container()
   if (c) c.style.cursor = cursor
+}
+
+// Cursor to show while hovering (not mid-interaction) over a given node.
+function hoverCursor(target: Konva.Node, selected: Set<string>, space: boolean): string {
+  if (space) return 'grab'
+  const n = target.name()
+  if (n === 'seat') return selected.has(target.id()) ? 'move' : 'pointer'
+  if (n === 'selbounds' || n === 'floor' || n === 'label' || n === 'arc-center') return 'move'
+  if (n === 'arc-radius') return 'crosshair'
+  if (n.startsWith('handle-')) return edgeCursor(n.slice('handle-'.length) as ResizeEdge)
+  return 'default'
 }
 
 function isTyping(e: KeyboardEvent): boolean {
