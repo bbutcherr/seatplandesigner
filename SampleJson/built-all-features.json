@@ -1,0 +1,1582 @@
+{
+  "version": 1,
+  "exported_at": "2026-06-05T12:00:00+00:00",
+  "source_event": "Grand Gala 2026",
+  "plans": [
+    {
+      "name": "Main Hall",
+      "configuration": {
+        "width": 1600,
+        "height": 1200,
+        "backgroundUrl": "",
+        "seatRadius": 14,
+        "productColors": {
+          "product_1": "#2d9c6c",
+          "product_2": "#e39012",
+          "product_3": "#958dc2"
+        },
+        "productSelectedColors": {
+          "product_1": "#1bde14",
+          "product_2": "#a16100",
+          "product_3": "#5b4bb3"
+        },
+        "productSizes": {
+          "product_1": 14,
+          "product_2": 20,
+          "product_3": 30
+        },
+        "auto_zoom_enabled": true,
+        "auto_zoom_level": 6,
+        "auto_zoom_target": "both",
+        "canvas_color": "#0f172a",
+        "canvas_color2": "#1e3a5f",
+        "canvas_gradient": "radial",
+        "seat_label_size": 10,
+        "show_seat_labels": true
+      },
+      "seats": [
+        {
+          "label": "A1",
+          "x_pos": 300,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A2",
+          "x_pos": 340,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A3",
+          "x_pos": 380,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A4",
+          "x_pos": 420,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A5",
+          "x_pos": 460,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A6",
+          "x_pos": 500,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A7",
+          "x_pos": 540,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A8",
+          "x_pos": 580,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A9",
+          "x_pos": 620,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A10",
+          "x_pos": 660,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A11",
+          "x_pos": 700,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A12",
+          "x_pos": 740,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A13",
+          "x_pos": 780,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "A14",
+          "x_pos": 820,
+          "y_pos": 320,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B1",
+          "x_pos": 300,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B2",
+          "x_pos": 340,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B3",
+          "x_pos": 380,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B4",
+          "x_pos": 420,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B5",
+          "x_pos": 460,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B6",
+          "x_pos": 500,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B7",
+          "x_pos": 540,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B8",
+          "x_pos": 580,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B9",
+          "x_pos": 620,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B10",
+          "x_pos": 660,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B11",
+          "x_pos": 700,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B12",
+          "x_pos": 740,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B13",
+          "x_pos": 780,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "B14",
+          "x_pos": 820,
+          "y_pos": 362,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C1",
+          "x_pos": 300,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C2",
+          "x_pos": 340,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C3",
+          "x_pos": 380,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C4",
+          "x_pos": 420,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C5",
+          "x_pos": 460,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C6",
+          "x_pos": 500,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C7",
+          "x_pos": 540,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C8",
+          "x_pos": 580,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C9",
+          "x_pos": 620,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C10",
+          "x_pos": 660,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C11",
+          "x_pos": 700,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C12",
+          "x_pos": 740,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C13",
+          "x_pos": 780,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "C14",
+          "x_pos": 820,
+          "y_pos": 404,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D1",
+          "x_pos": 300,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D2",
+          "x_pos": 340,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D3",
+          "x_pos": 380,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D4",
+          "x_pos": 420,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D5",
+          "x_pos": 460,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D6",
+          "x_pos": 500,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D7",
+          "x_pos": 540,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D8",
+          "x_pos": 580,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D9",
+          "x_pos": 620,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D10",
+          "x_pos": 660,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D11",
+          "x_pos": 700,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D12",
+          "x_pos": 740,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D13",
+          "x_pos": 780,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "D14",
+          "x_pos": 820,
+          "y_pos": 446,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E1",
+          "x_pos": 300,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E2",
+          "x_pos": 340,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E3",
+          "x_pos": 380,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E4",
+          "x_pos": 420,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E5",
+          "x_pos": 460,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E6",
+          "x_pos": 500,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E7",
+          "x_pos": 540,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E8",
+          "x_pos": 580,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E9",
+          "x_pos": 620,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E10",
+          "x_pos": 660,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E11",
+          "x_pos": 700,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E12",
+          "x_pos": 740,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E13",
+          "x_pos": 780,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "E14",
+          "x_pos": 820,
+          "y_pos": 488,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F1",
+          "x_pos": 300,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F2",
+          "x_pos": 340,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F3",
+          "x_pos": 380,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F4",
+          "x_pos": 420,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F5",
+          "x_pos": 460,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F6",
+          "x_pos": 500,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F7",
+          "x_pos": 540,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F8",
+          "x_pos": 580,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F9",
+          "x_pos": 620,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F10",
+          "x_pos": 660,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F11",
+          "x_pos": 700,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F12",
+          "x_pos": 740,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F13",
+          "x_pos": 780,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "F14",
+          "x_pos": 820,
+          "y_pos": 530,
+          "product_name": "Stalls"
+        },
+        {
+          "label": "VA1",
+          "x_pos": 320,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA2",
+          "x_pos": 364,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA3",
+          "x_pos": 408,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA4",
+          "x_pos": 452,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA5",
+          "x_pos": 496,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA6",
+          "x_pos": 540,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA7",
+          "x_pos": 584,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA8",
+          "x_pos": 628,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA9",
+          "x_pos": 672,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "VA10",
+          "x_pos": 716,
+          "y_pos": 250,
+          "product_name": "VIP"
+        },
+        {
+          "label": "CA1",
+          "x_pos": 336,
+          "y_pos": 1027,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA2",
+          "x_pos": 375,
+          "y_pos": 976,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA3",
+          "x_pos": 419,
+          "y_pos": 929,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA4",
+          "x_pos": 469,
+          "y_pos": 888,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA5",
+          "x_pos": 523,
+          "y_pos": 853,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA6",
+          "x_pos": 581,
+          "y_pos": 825,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA7",
+          "x_pos": 641,
+          "y_pos": 803,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA8",
+          "x_pos": 704,
+          "y_pos": 788,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA9",
+          "x_pos": 768,
+          "y_pos": 781,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA10",
+          "x_pos": 832,
+          "y_pos": 781,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA11",
+          "x_pos": 896,
+          "y_pos": 788,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA12",
+          "x_pos": 959,
+          "y_pos": 803,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA13",
+          "x_pos": 1019,
+          "y_pos": 825,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA14",
+          "x_pos": 1077,
+          "y_pos": 853,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA15",
+          "x_pos": 1131,
+          "y_pos": 888,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA16",
+          "x_pos": 1181,
+          "y_pos": 929,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA17",
+          "x_pos": 1225,
+          "y_pos": 976,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CA18",
+          "x_pos": 1264,
+          "y_pos": 1027,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB1",
+          "x_pos": 298,
+          "y_pos": 1001,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB2",
+          "x_pos": 340,
+          "y_pos": 946,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB3",
+          "x_pos": 388,
+          "y_pos": 896,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB4",
+          "x_pos": 442,
+          "y_pos": 851,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB5",
+          "x_pos": 500,
+          "y_pos": 813,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB6",
+          "x_pos": 563,
+          "y_pos": 782,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB7",
+          "x_pos": 628,
+          "y_pos": 759,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB8",
+          "x_pos": 696,
+          "y_pos": 743,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB9",
+          "x_pos": 765,
+          "y_pos": 735,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB10",
+          "x_pos": 835,
+          "y_pos": 735,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB11",
+          "x_pos": 904,
+          "y_pos": 743,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB12",
+          "x_pos": 972,
+          "y_pos": 759,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB13",
+          "x_pos": 1037,
+          "y_pos": 782,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB14",
+          "x_pos": 1100,
+          "y_pos": 813,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB15",
+          "x_pos": 1158,
+          "y_pos": 851,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB16",
+          "x_pos": 1212,
+          "y_pos": 896,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB17",
+          "x_pos": 1260,
+          "y_pos": 946,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CB18",
+          "x_pos": 1302,
+          "y_pos": 1001,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC1",
+          "x_pos": 259,
+          "y_pos": 975,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC2",
+          "x_pos": 305,
+          "y_pos": 916,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC3",
+          "x_pos": 357,
+          "y_pos": 862,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC4",
+          "x_pos": 415,
+          "y_pos": 814,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC5",
+          "x_pos": 477,
+          "y_pos": 773,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC6",
+          "x_pos": 545,
+          "y_pos": 740,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC7",
+          "x_pos": 615,
+          "y_pos": 715,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC8",
+          "x_pos": 688,
+          "y_pos": 698,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC9",
+          "x_pos": 763,
+          "y_pos": 689,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC10",
+          "x_pos": 837,
+          "y_pos": 689,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC11",
+          "x_pos": 912,
+          "y_pos": 698,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC12",
+          "x_pos": 985,
+          "y_pos": 715,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC13",
+          "x_pos": 1055,
+          "y_pos": 740,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC14",
+          "x_pos": 1123,
+          "y_pos": 773,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC15",
+          "x_pos": 1185,
+          "y_pos": 814,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC16",
+          "x_pos": 1243,
+          "y_pos": 862,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC17",
+          "x_pos": 1295,
+          "y_pos": 916,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        },
+        {
+          "label": "CC18",
+          "x_pos": 1341,
+          "y_pos": 975,
+          "product_name": "Table",
+          "arc_id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469"
+        }
+      ],
+      "labels": [
+        {
+          "text": "MAIN HALL",
+          "x_pos": 800,
+          "y_pos": 170,
+          "color": "#f8fafc",
+          "font_family": "Georgia",
+          "font_size": 30,
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "rotation": 0,
+          "row": false
+        },
+        {
+          "text": "A",
+          "x_pos": 266,
+          "y_pos": 310,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "A",
+          "x_pos": 854,
+          "y_pos": 310,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "B",
+          "x_pos": 266,
+          "y_pos": 352,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "B",
+          "x_pos": 854,
+          "y_pos": 352,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "C",
+          "x_pos": 266,
+          "y_pos": 394,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "C",
+          "x_pos": 854,
+          "y_pos": 394,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "D",
+          "x_pos": 266,
+          "y_pos": 436,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "D",
+          "x_pos": 854,
+          "y_pos": 436,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "E",
+          "x_pos": 266,
+          "y_pos": 478,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "E",
+          "x_pos": 854,
+          "y_pos": 478,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "F",
+          "x_pos": 266,
+          "y_pos": 520,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "F",
+          "x_pos": 854,
+          "y_pos": 520,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "VA",
+          "x_pos": 286,
+          "y_pos": 240,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "VA",
+          "x_pos": 750,
+          "y_pos": 240,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "CA",
+          "x_pos": 302,
+          "y_pos": 1017,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "CA",
+          "x_pos": 1298,
+          "y_pos": 1017,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "CB",
+          "x_pos": 264,
+          "y_pos": 991,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "CB",
+          "x_pos": 1336,
+          "y_pos": 991,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "CC",
+          "x_pos": 225,
+          "y_pos": 965,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": true
+        },
+        {
+          "text": "CC",
+          "x_pos": 1375,
+          "y_pos": 965,
+          "color": "#0f172a",
+          "font_family": "sans-serif",
+          "font_size": 20,
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "rotation": 0,
+          "row": true
+        }
+      ],
+      "floor_elements": [
+        {
+          "type": "stage",
+          "x_pos": 560,
+          "y_pos": 70,
+          "width": 480,
+          "height": 60,
+          "rotation": 0,
+          "fill": "#1e293b",
+          "stroke": "#0f172a",
+          "stroke_width": 2,
+          "label": "STAGE",
+          "font_size": 26
+        },
+        {
+          "type": "rect",
+          "x_pos": 90,
+          "y_pos": 320,
+          "width": 120,
+          "height": 360,
+          "rotation": 0,
+          "fill": "#334155",
+          "stroke": "#0f172a",
+          "stroke_width": 2,
+          "label": "BAR",
+          "font_size": 18
+        },
+        {
+          "type": "line",
+          "x_pos": 260,
+          "y_pos": 200,
+          "width": 0,
+          "height": 540,
+          "points": [
+            0,
+            0,
+            0,
+            540
+          ],
+          "rotation": 0,
+          "fill": "#e2e8f0",
+          "stroke": "#64748b",
+          "stroke_width": 3,
+          "label": "",
+          "font_size": 18
+        },
+        {
+          "type": "circle",
+          "x_pos": 1240,
+          "y_pos": 260,
+          "width": 90,
+          "height": 90,
+          "rotation": 0,
+          "fill": "#fde68a",
+          "stroke": "#d97706",
+          "stroke_width": 2,
+          "label": "DJ",
+          "font_size": 16
+        }
+      ],
+      "arc_blocks": [
+        {
+          "id": "d9dbaa26-5a6a-4f81-8610-211e9b6f1469",
+          "center_x": 800,
+          "center_y": 1340,
+          "base_radius": 560,
+          "row_gap": 46,
+          "rows": 3,
+          "cols": 18,
+          "start_angle": 214,
+          "end_angle": 326,
+          "prefix": "C",
+          "row_start": "A",
+          "seat_start": 1,
+          "product_name": "Table"
+        }
+      ]
+    },
+    {
+      "name": "Balcony",
+      "configuration": {
+        "width": 1200,
+        "height": 700,
+        "backgroundUrl": "",
+        "seatRadius": 15,
+        "productColors": {
+          "product_1": "#2d9c6c"
+        },
+        "productSelectedColors": {
+          "product_1": "#81c4a7"
+        },
+        "productSizes": {
+          "product_1": 15
+        },
+        "auto_zoom_enabled": true,
+        "auto_zoom_level": 5,
+        "auto_zoom_target": "both",
+        "canvas_color": "#fef3c7",
+        "canvas_color2": "#fbbf24",
+        "canvas_gradient": "vertical",
+        "seat_label_size": 11,
+        "show_seat_labels": true
+      },
+      "seats": [
+        {
+          "label": "BA1",
+          "x_pos": 220,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA2",
+          "x_pos": 264,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA3",
+          "x_pos": 308,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA4",
+          "x_pos": 352,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA5",
+          "x_pos": 396,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA6",
+          "x_pos": 440,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA7",
+          "x_pos": 484,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA8",
+          "x_pos": 528,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA9",
+          "x_pos": 572,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA10",
+          "x_pos": 616,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA11",
+          "x_pos": 660,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BA12",
+          "x_pos": 704,
+          "y_pos": 220,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB1",
+          "x_pos": 220,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB2",
+          "x_pos": 264,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB3",
+          "x_pos": 308,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB4",
+          "x_pos": 352,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB5",
+          "x_pos": 396,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB6",
+          "x_pos": 440,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB7",
+          "x_pos": 484,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB8",
+          "x_pos": 528,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB9",
+          "x_pos": 572,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB10",
+          "x_pos": 616,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB11",
+          "x_pos": 660,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BB12",
+          "x_pos": 704,
+          "y_pos": 264,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC1",
+          "x_pos": 220,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC2",
+          "x_pos": 264,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC3",
+          "x_pos": 308,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC4",
+          "x_pos": 352,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC5",
+          "x_pos": 396,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC6",
+          "x_pos": 440,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC7",
+          "x_pos": 484,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC8",
+          "x_pos": 528,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC9",
+          "x_pos": 572,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC10",
+          "x_pos": 616,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC11",
+          "x_pos": 660,
+          "y_pos": 308,
+          "product_name": "Standard"
+        },
+        {
+          "label": "BC12",
+          "x_pos": 704,
+          "y_pos": 308,
+          "product_name": "Standard"
+        }
+      ],
+      "labels": [],
+      "floor_elements": [],
+      "arc_blocks": []
+    }
+  ]
+}
