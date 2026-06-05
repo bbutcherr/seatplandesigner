@@ -15,7 +15,7 @@ interface Pt { x: number; y: number }
 type Interaction =
   | { mode: 'none' }
   | { mode: 'pan'; startScreen: Pt; startPos: Pt }
-  | { mode: 'move'; startWorld: Pt; originals: Map<string, Pt> }
+  | { mode: 'move'; startWorld: Pt; originals: Map<string, Pt>; clickId?: string; moved: boolean }
   | { mode: 'move-floor'; id: string; startWorld: Pt; orig: { x: number; y: number; w: number; h: number } }
   | { mode: 'marquee'; start: Pt; additive: boolean }
   | { mode: 'draw'; start: Pt }
@@ -198,12 +198,14 @@ export function DesignCanvas({
   const nextSeatLabel = () => `S${plan.seats.length + 1}`
 
   // Begin dragging a set of seats: snapshot their positions and flag grabbing.
-  const beginSeatMove = (ids: string[], world: Pt) => {
+  // `clickId` is the seat actually pressed — used to isolate it on a click
+  // (press+release without dragging) instead of keeping the whole group.
+  const beginSeatMove = (ids: string[], world: Pt, clickId?: string) => {
     const originals = new Map<string, Pt>()
     plan.seats.forEach((seat) => {
       if (ids.includes(seat.id)) originals.set(seat.id, { x: seat.x, y: seat.y })
     })
-    interaction.current = { mode: 'move', startWorld: world, originals }
+    interaction.current = { mode: 'move', startWorld: world, originals, clickId, moved: false }
     setGrabbing(true)
   }
 
@@ -249,7 +251,7 @@ export function DesignCanvas({
           s.setSelectedSeats([id])
           ids = [id]
         }
-        beginSeatMove(ids, world)
+        beginSeatMove(ids, world, id)
       } else if (name === 'selbounds') {
         // grab the whole multi-selection from inside its bounding box
         beginSeatMove(s.selectedSeatIds, world)
@@ -334,6 +336,9 @@ export function DesignCanvas({
       }
     } else if (it.mode === 'move') {
       const raw = { x: world.x - it.startWorld.x, y: world.y - it.startWorld.y }
+      // Treat a tiny press as a click (handled on mouseup), not a drag.
+      if (!it.moved && Math.hypot(raw.x, raw.y) * scale > 3) it.moved = true
+      if (!it.moved) return
       const ids = Array.from(it.originals.keys())
       const proposed = ids.map((id) => {
         const o = it.originals.get(id)!
@@ -443,6 +448,10 @@ export function DesignCanvas({
     } else if (it.mode === 'draw' && draw) {
       finalizeFloorDraw(draw)
       setDraw(null)
+    } else if (it.mode === 'move' && !it.moved && it.clickId) {
+      // A click (no drag) on a seat isolates it — so you can pick one seat out
+      // of a freshly-added (fully selected) row.
+      s.setSelectedSeats([it.clickId])
     }
     if (smart.guides.length || smart.dists.length) setSmart({ guides: [], dists: [] })
     if (resize) setResize(null)
