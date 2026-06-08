@@ -29,7 +29,7 @@ eq(out.plans.length === raw.plans.length, `plan count ${out.plans.length} vs ${r
 const p0 = out.plans[0]
 eq(
   JSON.stringify(Object.keys(p0)) ===
-    JSON.stringify(['name', 'configuration', 'seats', 'labels', 'floor_elements', 'arc_blocks']),
+    JSON.stringify(['name', 'configuration', 'seats', 'labels', 'floor_elements', 'arc_blocks', 'zones']),
   'plan keys: ' + Object.keys(p0),
 )
 eq(Array.isArray(p0.labels), 'labels is an array')

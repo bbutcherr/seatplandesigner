@@ -16,6 +16,45 @@ export function PropertiesPanel() {
   const s = useDesignerStore()
   const plan = s.project.plans.find((p) => p.id === s.project.activePlanId)!
 
+  const zone = plan.zones.find((z) => z.id === s.selectedZoneId)
+  if (zone) {
+    return (
+      <div className="panel">
+        <div className="panel-head">
+          <h3>Area / zone</h3>
+          <button className="btn-sm" onClick={() => s.deleteZone(zone.id)}>
+            Delete
+          </button>
+        </div>
+        <label className="field">
+          <span>Label</span>
+          <input value={zone.label} onChange={(e) => s.updateZone(zone.id, { label: e.target.value })} />
+        </label>
+        <div className="grid2">
+          <label className="field">
+            <span>Capacity</span>
+            <input type="number" min={0} value={zone.capacity} onChange={(e) => s.updateZone(zone.id, { capacity: Math.max(0, Number(e.target.value)) })} />
+          </label>
+          <label className="field">
+            <span>Color</span>
+            <input type="color" value={zone.color} onChange={(e) => s.updateZone(zone.id, { color: e.target.value })} />
+          </label>
+        </div>
+        <label className="field">
+          <span>Ticket type</span>
+          <select value={zone.productId} onChange={(e) => s.updateZone(zone.id, { productId: e.target.value })}>
+            {plan.products.map((p) => (
+              <option key={p.id} value={p.id}>
+                {p.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <p className="hint">A bookable area — one region instead of individual seats. Drag it to move; resize/redraw with the Area tool.</p>
+      </div>
+    )
+  }
+
   const label = plan.labels.find((l) => l.id === s.selectedLabelId)
   if (label) {
     return (

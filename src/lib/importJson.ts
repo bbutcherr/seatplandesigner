@@ -31,11 +31,15 @@ export function bundleToProject(bundle: ExportedBundle): Project {
     const selectedValues = Object.values(cfg.productSelectedColors ?? {})
     const sizeValues = Object.values(cfg.productSizes ?? {})
 
-    // unique product names in first-seen order
+    // unique product names in first-seen order (seats, then arc blocks, then
+    // zones — so plans made entirely of zones still rebuild their ticket types)
     const names: string[] = []
-    for (const seat of ep.seats ?? []) {
-      if (!names.includes(seat.product_name)) names.push(seat.product_name)
+    const note = (n: string | undefined) => {
+      if (n && !names.includes(n)) names.push(n)
     }
+    for (const seat of ep.seats ?? []) note(seat.product_name)
+    for (const b of ep.arc_blocks ?? []) note(b.product_name)
+    for (const z of ep.zones ?? []) note(z.product_name)
     if (names.length === 0) names.push('Standard')
 
     const fallbackRadius = cfg.seatRadius ?? 15
@@ -136,6 +140,14 @@ export function bundleToProject(bundle: ExportedBundle): Project {
         row: !!l.row,
       })),
       arcBlocks,
+      zones: (ep.zones ?? []).map((z) => ({
+        id: uid(),
+        label: z.label ?? '',
+        points: z.points ?? [],
+        color: z.color ?? '#3b82f6',
+        productId: (productByName.get(z.product_name) ?? products[0]).id,
+        capacity: z.capacity ?? 0,
+      })),
     }
   })
 

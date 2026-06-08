@@ -1,4 +1,4 @@
-import type { FloorElement, Label, Plan } from '../types'
+import type { FloorElement, Label, Plan, Zone } from '../types'
 import { svgBgFill } from './gradient'
 
 const ANCHOR = { left: 'start', center: 'middle', right: 'end' } as const
@@ -25,11 +25,11 @@ function floorToSvg(el: FloorElement): string {
   if (el.type === 'text') {
     return `<g transform="${g}"><text x="0" y="${el.fontSize}" font-size="${el.fontSize}" font-weight="bold" fill="${esc(el.fill)}" font-family="sans-serif">${esc(el.label)}</text></g>`
   }
-  if (el.type === 'line') {
+  if (el.type === 'line' || el.type === 'arc') {
     const pts = el.points ?? [0, 0, el.width, el.height]
     const pairs: string[] = []
     for (let i = 0; i < pts.length; i += 2) pairs.push(`${pts[i]},${pts[i + 1]}`)
-    return `<g transform="${g}"><polyline points="${pairs.join(' ')}" fill="none" stroke="${esc(el.stroke)}" stroke-width="${Math.max(el.strokeWidth, 3)}"/></g>`
+    return `<g transform="${g}"><polyline points="${pairs.join(' ')}" fill="none" stroke="${esc(el.stroke)}" stroke-width="${Math.max(el.strokeWidth, 3)}" stroke-linecap="round" stroke-linejoin="round"/></g>`
   }
   if (el.type === 'circle') {
     const r = Math.max(el.width, el.height) / 2
@@ -45,6 +45,22 @@ function floorToSvg(el: FloorElement): string {
     ? `<text x="${el.width / 2}" y="${el.height / 2 + el.fontSize * 0.35}" font-size="${el.fontSize}" font-weight="bold" text-anchor="middle" fill="${labelColor}" font-family="sans-serif">${esc(el.label)}</text>`
     : ''
   return `<g transform="${g}"><rect width="${el.width}" height="${el.height}" rx="${rx}" fill="${esc(el.fill)}" ${stroke}/>${label}</g>`
+}
+
+function zoneToSvg(z: Zone): string {
+  const pts: string[] = []
+  for (let i = 0; i < z.points.length; i += 2) pts.push(`${z.points[i]},${z.points[i + 1]}`)
+  let cx = 0
+  let cy = 0
+  const n = z.points.length / 2 || 1
+  for (let i = 0; i < z.points.length; i += 2) {
+    cx += z.points[i]
+    cy += z.points[i + 1]
+  }
+  cx /= n
+  cy /= n
+  const cap = z.capacity ? `<tspan x="${Math.round(cx)}" dy="22">${z.capacity} cap</tspan>` : ''
+  return `<polygon points="${pts.join(' ')}" fill="${esc(z.color)}" fill-opacity="0.5" stroke="${esc(z.color)}" stroke-width="2"/><text x="${Math.round(cx)}" y="${Math.round(cy)}" font-size="18" font-weight="bold" text-anchor="middle" fill="#f8fafc" font-family="sans-serif">${esc(z.label)}${cap}</text>`
 }
 
 /** Render a plan to an SVG string. This is an internal rendering step only —
@@ -69,6 +85,7 @@ export function planToSvg(plan: Plan): string {
     )
   }
   for (const el of plan.floorElements) out.push(floorToSvg(el))
+  for (const z of plan.zones) out.push(zoneToSvg(z))
   for (const seat of plan.seats) {
     const product = byId.get(seat.productId)
     const fill = product?.color ?? '#888888'

@@ -5,7 +5,7 @@ import { downloadPlanImage } from '../../lib/raster'
 import { validateProjectForExport } from '../../lib/validate'
 import { bundleToProject } from '../../lib/importJson'
 import { copyToClipboard } from '../../lib/clipboard'
-import { buildExamplePlan } from '../../lib/sampleProject'
+import { TEMPLATES } from '../../lib/sampleProject'
 
 export function TopBar({
   previewOpen,
@@ -17,6 +17,8 @@ export function TopBar({
   const s = useDesignerStore()
   const fileRef = useRef<HTMLInputElement>(null)
   const [copyState, setCopyState] = useState<'idle' | 'ok' | 'fail'>('idle')
+  const [jsonView, setJsonView] = useState<string | null>(null)
+  const [modalCopied, setModalCopied] = useState(false)
 
   const safeName = () =>
     s.project.sourceEvent.replace(/[^a-z0-9]+/gi, '-').toLowerCase() || 'seating-plans'
@@ -54,6 +56,20 @@ export function TopBar({
     setTimeout(() => setCopyState('idle'), 1600)
   }
 
+  // Open a modal that shows the full export JSON with a one-click Copy.
+  const onViewJson = () => {
+    if (!passesValidation()) return
+    setModalCopied(false)
+    setJsonView(bundleToJson(projectToBundle(s.project, new Date())))
+  }
+
+  const copyFromModal = async () => {
+    if (jsonView == null) return
+    const ok = await copyToClipboard(jsonView)
+    setModalCopied(ok)
+    setTimeout(() => setModalCopied(false), 1600)
+  }
+
   const onExportImage = async () => {
     const plan = s.project.plans.find((p) => p.id === s.project.activePlanId)!
     const slug = plan.name.replace(/[^a-z0-9]+/gi, '-').toLowerCase() || 'plan'
@@ -66,9 +82,11 @@ export function TopBar({
     }
   }
 
-  // Drop in a fully-built example as a NEW plan (keeps existing plans).
-  const onExample = () => {
-    const plan = buildExamplePlan()
+  // Drop a ready-made template in as a NEW plan (keeps existing plans).
+  const onTemplate = (id: string) => {
+    const t = TEMPLATES.find((x) => x.id === id)
+    if (!t) return
+    const plan = t.build()
     s.loadProject({
       ...s.project,
       plans: [...s.project.plans, plan],
@@ -133,9 +151,19 @@ export function TopBar({
         <button className="btn-sm" onClick={() => s.duplicateActivePlan()}>
           Duplicate
         </button>
-        <button className="btn-sm" onClick={onExample} title="Add a fully-built example auditorium as a new plan, then adjust it with the tools">
-          ✨ Example
-        </button>
+        <select
+          className="btn-sm"
+          value=""
+          title="Add a ready-made template as a new plan, then adjust it with the tools"
+          onChange={(e) => onTemplate(e.target.value)}
+        >
+          <option value="">✨ Template…</option>
+          {TEMPLATES.map((t) => (
+            <option key={t.id} value={t.id}>
+              {t.name}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div className="topbar-actions">
@@ -147,6 +175,9 @@ export function TopBar({
         </button>
         <button className="btn-sm" onClick={onExportImage}>
           Export WebP
+        </button>
+        <button className="btn-sm" onClick={onViewJson}>
+          View JSON
         </button>
         <button className="btn-sm" onClick={onCopyJson}>
           {copyState === 'ok' ? 'Copied ✓' : copyState === 'fail' ? 'Copy failed' : 'Copy JSON'}
@@ -166,6 +197,28 @@ export function TopBar({
           }}
         />
       </div>
+
+      {jsonView !== null && (
+        <div className="json-modal-backdrop" onClick={() => setJsonView(null)}>
+          <div className="json-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="json-modal-head">
+              <span>
+                Export JSON · {s.project.plans.length} plan
+                {s.project.plans.length > 1 ? 's' : ''} · {(jsonView.length / 1024).toFixed(1)} KB
+              </span>
+              <div className="json-modal-actions">
+                <button className="btn-sm primary" onClick={copyFromModal}>
+                  {modalCopied ? 'Copied ✓' : 'Copy'}
+                </button>
+                <button className="btn-sm" onClick={() => setJsonView(null)}>
+                  Close ✕
+                </button>
+              </div>
+            </div>
+            <pre className="json-modal-body">{jsonView}</pre>
+          </div>
+        </div>
+      )}
     </header>
   )
 }

@@ -1,0 +1,5425 @@
+{
+  "version": 1,
+  "exported_at": "2026-06-05T12:00:00+00:00",
+  "source_event": "Film Hall",
+  "plans": [
+    {
+      "name": "Film Hall",
+      "configuration": {
+        "width": 1800,
+        "height": 1320,
+        "backgroundUrl": "",
+        "seatRadius": 12,
+        "productColors": {
+          "product_1": "#e39012",
+          "product_2": "#2d9c6c",
+          "product_3": "#a855f7",
+          "product_4": "#3b82f6"
+        },
+        "productSelectedColors": {
+          "product_1": "#ffb84d",
+          "product_2": "#1bde14",
+          "product_3": "#7c3aed",
+          "product_4": "#1d4ed8"
+        },
+        "productSizes": {
+          "product_1": 13,
+          "product_2": 12,
+          "product_3": 12,
+          "product_4": 11
+        },
+        "auto_zoom_enabled": true,
+        "auto_zoom_level": 5,
+        "auto_zoom_target": "both",
+        "canvas_color": "#111827",
+        "canvas_color2": "#020617",
+        "canvas_gradient": "radial",
+        "seat_label_size": 8,
+        "show_seat_labels": true
+      },
+      "seats": [
+        {
+          "label": "LA1",
+          "x_pos": 343,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LA2",
+          "x_pos": 377,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LA3",
+          "x_pos": 411,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LA4",
+          "x_pos": 445,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LA5",
+          "x_pos": 479,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LA6",
+          "x_pos": 513,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LA7",
+          "x_pos": 547,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LA8",
+          "x_pos": 581,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LB1",
+          "x_pos": 343,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LB2",
+          "x_pos": 377,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LB3",
+          "x_pos": 411,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LB4",
+          "x_pos": 445,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LB5",
+          "x_pos": 479,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LB6",
+          "x_pos": 513,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LB7",
+          "x_pos": 547,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LB8",
+          "x_pos": 581,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LC1",
+          "x_pos": 343,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LC2",
+          "x_pos": 377,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LC3",
+          "x_pos": 411,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LC4",
+          "x_pos": 445,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LC5",
+          "x_pos": 479,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LC6",
+          "x_pos": 513,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LC7",
+          "x_pos": 547,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LC8",
+          "x_pos": 581,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "LD1",
+          "x_pos": 343,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LD2",
+          "x_pos": 377,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LD3",
+          "x_pos": 411,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LD4",
+          "x_pos": 445,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LD5",
+          "x_pos": 479,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LD6",
+          "x_pos": 513,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LD7",
+          "x_pos": 547,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LD8",
+          "x_pos": 581,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LE1",
+          "x_pos": 343,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LE2",
+          "x_pos": 377,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LE3",
+          "x_pos": 411,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LE4",
+          "x_pos": 445,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LE5",
+          "x_pos": 479,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LE6",
+          "x_pos": 513,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LE7",
+          "x_pos": 547,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LE8",
+          "x_pos": 581,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LF1",
+          "x_pos": 343,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LF2",
+          "x_pos": 377,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LF3",
+          "x_pos": 411,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LF4",
+          "x_pos": 445,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LF5",
+          "x_pos": 479,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LF6",
+          "x_pos": 513,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LF7",
+          "x_pos": 547,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LF8",
+          "x_pos": 581,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LG1",
+          "x_pos": 343,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LG2",
+          "x_pos": 377,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LG3",
+          "x_pos": 411,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LG4",
+          "x_pos": 445,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LG5",
+          "x_pos": 479,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LG6",
+          "x_pos": 513,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LG7",
+          "x_pos": 547,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LG8",
+          "x_pos": 581,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LH1",
+          "x_pos": 343,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LH2",
+          "x_pos": 377,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LH3",
+          "x_pos": 411,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LH4",
+          "x_pos": 445,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LH5",
+          "x_pos": 479,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LH6",
+          "x_pos": 513,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LH7",
+          "x_pos": 547,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LH8",
+          "x_pos": 581,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LI1",
+          "x_pos": 343,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LI2",
+          "x_pos": 377,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LI3",
+          "x_pos": 411,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LI4",
+          "x_pos": 445,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LI5",
+          "x_pos": 479,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LI6",
+          "x_pos": 513,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LI7",
+          "x_pos": 547,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LI8",
+          "x_pos": 581,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LJ1",
+          "x_pos": 343,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LJ2",
+          "x_pos": 377,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LJ3",
+          "x_pos": 411,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LJ4",
+          "x_pos": 445,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LJ5",
+          "x_pos": 479,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LJ6",
+          "x_pos": 513,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LJ7",
+          "x_pos": 547,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LJ8",
+          "x_pos": 581,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LK1",
+          "x_pos": 343,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LK2",
+          "x_pos": 377,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LK3",
+          "x_pos": 411,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LK4",
+          "x_pos": 445,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LK5",
+          "x_pos": 479,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LK6",
+          "x_pos": 513,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LK7",
+          "x_pos": 547,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LK8",
+          "x_pos": 581,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LL1",
+          "x_pos": 343,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LL2",
+          "x_pos": 377,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LL3",
+          "x_pos": 411,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LL4",
+          "x_pos": 445,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LL5",
+          "x_pos": 479,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LL6",
+          "x_pos": 513,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LL7",
+          "x_pos": 547,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LL8",
+          "x_pos": 581,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LM1",
+          "x_pos": 343,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LM2",
+          "x_pos": 377,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LM3",
+          "x_pos": 411,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LM4",
+          "x_pos": 445,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LM5",
+          "x_pos": 479,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LM6",
+          "x_pos": 513,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LM7",
+          "x_pos": 547,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LM8",
+          "x_pos": 581,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LN1",
+          "x_pos": 343,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LN2",
+          "x_pos": 377,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LN3",
+          "x_pos": 411,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LN4",
+          "x_pos": 445,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LN5",
+          "x_pos": 479,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LN6",
+          "x_pos": 513,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LN7",
+          "x_pos": 547,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "LN8",
+          "x_pos": 581,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CA1",
+          "x_pos": 645,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA2",
+          "x_pos": 679,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA3",
+          "x_pos": 713,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA4",
+          "x_pos": 747,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA5",
+          "x_pos": 781,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA6",
+          "x_pos": 815,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA7",
+          "x_pos": 849,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA8",
+          "x_pos": 883,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA9",
+          "x_pos": 917,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA10",
+          "x_pos": 951,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA11",
+          "x_pos": 985,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA12",
+          "x_pos": 1019,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA13",
+          "x_pos": 1053,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA14",
+          "x_pos": 1087,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA15",
+          "x_pos": 1121,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CA16",
+          "x_pos": 1155,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB1",
+          "x_pos": 645,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB2",
+          "x_pos": 679,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB3",
+          "x_pos": 713,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB4",
+          "x_pos": 747,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB5",
+          "x_pos": 781,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB6",
+          "x_pos": 815,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB7",
+          "x_pos": 849,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB8",
+          "x_pos": 883,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB9",
+          "x_pos": 917,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB10",
+          "x_pos": 951,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB11",
+          "x_pos": 985,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB12",
+          "x_pos": 1019,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB13",
+          "x_pos": 1053,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB14",
+          "x_pos": 1087,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB15",
+          "x_pos": 1121,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CB16",
+          "x_pos": 1155,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC1",
+          "x_pos": 645,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC2",
+          "x_pos": 679,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC3",
+          "x_pos": 713,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC4",
+          "x_pos": 747,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC5",
+          "x_pos": 781,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC6",
+          "x_pos": 815,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC7",
+          "x_pos": 849,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC8",
+          "x_pos": 883,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC9",
+          "x_pos": 917,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC10",
+          "x_pos": 951,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC11",
+          "x_pos": 985,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC12",
+          "x_pos": 1019,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC13",
+          "x_pos": 1053,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC14",
+          "x_pos": 1087,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC15",
+          "x_pos": 1121,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CC16",
+          "x_pos": 1155,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "CD1",
+          "x_pos": 645,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD2",
+          "x_pos": 679,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD3",
+          "x_pos": 713,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD4",
+          "x_pos": 747,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD5",
+          "x_pos": 781,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD6",
+          "x_pos": 815,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD7",
+          "x_pos": 849,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD8",
+          "x_pos": 883,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD9",
+          "x_pos": 917,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD10",
+          "x_pos": 951,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD11",
+          "x_pos": 985,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD12",
+          "x_pos": 1019,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD13",
+          "x_pos": 1053,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD14",
+          "x_pos": 1087,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD15",
+          "x_pos": 1121,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CD16",
+          "x_pos": 1155,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE1",
+          "x_pos": 645,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE2",
+          "x_pos": 679,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE3",
+          "x_pos": 713,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE4",
+          "x_pos": 747,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE5",
+          "x_pos": 781,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE6",
+          "x_pos": 815,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE7",
+          "x_pos": 849,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE8",
+          "x_pos": 883,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE9",
+          "x_pos": 917,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE10",
+          "x_pos": 951,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE11",
+          "x_pos": 985,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE12",
+          "x_pos": 1019,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE13",
+          "x_pos": 1053,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE14",
+          "x_pos": 1087,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE15",
+          "x_pos": 1121,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CE16",
+          "x_pos": 1155,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF1",
+          "x_pos": 645,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF2",
+          "x_pos": 679,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF3",
+          "x_pos": 713,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF4",
+          "x_pos": 747,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF5",
+          "x_pos": 781,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF6",
+          "x_pos": 815,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF7",
+          "x_pos": 849,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF8",
+          "x_pos": 883,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF9",
+          "x_pos": 917,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF10",
+          "x_pos": 951,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF11",
+          "x_pos": 985,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF12",
+          "x_pos": 1019,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF13",
+          "x_pos": 1053,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF14",
+          "x_pos": 1087,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF15",
+          "x_pos": 1121,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CF16",
+          "x_pos": 1155,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG1",
+          "x_pos": 645,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG2",
+          "x_pos": 679,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG3",
+          "x_pos": 713,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG4",
+          "x_pos": 747,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG5",
+          "x_pos": 781,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG6",
+          "x_pos": 815,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG7",
+          "x_pos": 849,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG8",
+          "x_pos": 883,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG9",
+          "x_pos": 917,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG10",
+          "x_pos": 951,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG11",
+          "x_pos": 985,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG12",
+          "x_pos": 1019,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG13",
+          "x_pos": 1053,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG14",
+          "x_pos": 1087,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG15",
+          "x_pos": 1121,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CG16",
+          "x_pos": 1155,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH1",
+          "x_pos": 645,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH2",
+          "x_pos": 679,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH3",
+          "x_pos": 713,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH4",
+          "x_pos": 747,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH5",
+          "x_pos": 781,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH6",
+          "x_pos": 815,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH7",
+          "x_pos": 849,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH8",
+          "x_pos": 883,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH9",
+          "x_pos": 917,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH10",
+          "x_pos": 951,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH11",
+          "x_pos": 985,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH12",
+          "x_pos": 1019,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH13",
+          "x_pos": 1053,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH14",
+          "x_pos": 1087,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH15",
+          "x_pos": 1121,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CH16",
+          "x_pos": 1155,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI1",
+          "x_pos": 645,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI2",
+          "x_pos": 679,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI3",
+          "x_pos": 713,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI4",
+          "x_pos": 747,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI5",
+          "x_pos": 781,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI6",
+          "x_pos": 815,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI7",
+          "x_pos": 849,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI8",
+          "x_pos": 883,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI9",
+          "x_pos": 917,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI10",
+          "x_pos": 951,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI11",
+          "x_pos": 985,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI12",
+          "x_pos": 1019,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI13",
+          "x_pos": 1053,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI14",
+          "x_pos": 1087,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI15",
+          "x_pos": 1121,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CI16",
+          "x_pos": 1155,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ1",
+          "x_pos": 645,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ2",
+          "x_pos": 679,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ3",
+          "x_pos": 713,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ4",
+          "x_pos": 747,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ5",
+          "x_pos": 781,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ6",
+          "x_pos": 815,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ7",
+          "x_pos": 849,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ8",
+          "x_pos": 883,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ9",
+          "x_pos": 917,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ10",
+          "x_pos": 951,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ11",
+          "x_pos": 985,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ12",
+          "x_pos": 1019,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ13",
+          "x_pos": 1053,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ14",
+          "x_pos": 1087,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ15",
+          "x_pos": 1121,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CJ16",
+          "x_pos": 1155,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK1",
+          "x_pos": 645,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK2",
+          "x_pos": 679,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK3",
+          "x_pos": 713,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK4",
+          "x_pos": 747,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK5",
+          "x_pos": 781,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK6",
+          "x_pos": 815,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK7",
+          "x_pos": 849,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK8",
+          "x_pos": 883,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK9",
+          "x_pos": 917,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK10",
+          "x_pos": 951,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK11",
+          "x_pos": 985,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK12",
+          "x_pos": 1019,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK13",
+          "x_pos": 1053,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK14",
+          "x_pos": 1087,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK15",
+          "x_pos": 1121,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CK16",
+          "x_pos": 1155,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL1",
+          "x_pos": 645,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL2",
+          "x_pos": 679,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL3",
+          "x_pos": 713,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL4",
+          "x_pos": 747,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL5",
+          "x_pos": 781,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL6",
+          "x_pos": 815,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL7",
+          "x_pos": 849,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL8",
+          "x_pos": 883,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL9",
+          "x_pos": 917,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL10",
+          "x_pos": 951,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL11",
+          "x_pos": 985,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL12",
+          "x_pos": 1019,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL13",
+          "x_pos": 1053,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL14",
+          "x_pos": 1087,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL15",
+          "x_pos": 1121,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CL16",
+          "x_pos": 1155,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM1",
+          "x_pos": 645,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM2",
+          "x_pos": 679,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM3",
+          "x_pos": 713,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM4",
+          "x_pos": 747,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM5",
+          "x_pos": 781,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM6",
+          "x_pos": 815,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM7",
+          "x_pos": 849,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM8",
+          "x_pos": 883,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM9",
+          "x_pos": 917,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM10",
+          "x_pos": 951,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM11",
+          "x_pos": 985,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM12",
+          "x_pos": 1019,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM13",
+          "x_pos": 1053,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM14",
+          "x_pos": 1087,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM15",
+          "x_pos": 1121,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CM16",
+          "x_pos": 1155,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN1",
+          "x_pos": 645,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN2",
+          "x_pos": 679,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN3",
+          "x_pos": 713,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN4",
+          "x_pos": 747,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN5",
+          "x_pos": 781,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN6",
+          "x_pos": 815,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN7",
+          "x_pos": 849,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN8",
+          "x_pos": 883,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN9",
+          "x_pos": 917,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN10",
+          "x_pos": 951,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN11",
+          "x_pos": 985,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN12",
+          "x_pos": 1019,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN13",
+          "x_pos": 1053,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN14",
+          "x_pos": 1087,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN15",
+          "x_pos": 1121,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "CN16",
+          "x_pos": 1155,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RA1",
+          "x_pos": 1219,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RA2",
+          "x_pos": 1253,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RA3",
+          "x_pos": 1287,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RA4",
+          "x_pos": 1321,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RA5",
+          "x_pos": 1355,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RA6",
+          "x_pos": 1389,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RA7",
+          "x_pos": 1423,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RA8",
+          "x_pos": 1457,
+          "y_pos": 180,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RB1",
+          "x_pos": 1219,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RB2",
+          "x_pos": 1253,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RB3",
+          "x_pos": 1287,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RB4",
+          "x_pos": 1321,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RB5",
+          "x_pos": 1355,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RB6",
+          "x_pos": 1389,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RB7",
+          "x_pos": 1423,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RB8",
+          "x_pos": 1457,
+          "y_pos": 216,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RC1",
+          "x_pos": 1219,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RC2",
+          "x_pos": 1253,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RC3",
+          "x_pos": 1287,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RC4",
+          "x_pos": 1321,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RC5",
+          "x_pos": 1355,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RC6",
+          "x_pos": 1389,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RC7",
+          "x_pos": 1423,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RC8",
+          "x_pos": 1457,
+          "y_pos": 252,
+          "product_name": "Premium"
+        },
+        {
+          "label": "RD1",
+          "x_pos": 1219,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RD2",
+          "x_pos": 1253,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RD3",
+          "x_pos": 1287,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RD4",
+          "x_pos": 1321,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RD5",
+          "x_pos": 1355,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RD6",
+          "x_pos": 1389,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RD7",
+          "x_pos": 1423,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RD8",
+          "x_pos": 1457,
+          "y_pos": 288,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RE1",
+          "x_pos": 1219,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RE2",
+          "x_pos": 1253,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RE3",
+          "x_pos": 1287,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RE4",
+          "x_pos": 1321,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RE5",
+          "x_pos": 1355,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RE6",
+          "x_pos": 1389,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RE7",
+          "x_pos": 1423,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RE8",
+          "x_pos": 1457,
+          "y_pos": 324,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RF1",
+          "x_pos": 1219,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RF2",
+          "x_pos": 1253,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RF3",
+          "x_pos": 1287,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RF4",
+          "x_pos": 1321,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RF5",
+          "x_pos": 1355,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RF6",
+          "x_pos": 1389,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RF7",
+          "x_pos": 1423,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RF8",
+          "x_pos": 1457,
+          "y_pos": 360,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RG1",
+          "x_pos": 1219,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RG2",
+          "x_pos": 1253,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RG3",
+          "x_pos": 1287,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RG4",
+          "x_pos": 1321,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RG5",
+          "x_pos": 1355,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RG6",
+          "x_pos": 1389,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RG7",
+          "x_pos": 1423,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RG8",
+          "x_pos": 1457,
+          "y_pos": 396,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RH1",
+          "x_pos": 1219,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RH2",
+          "x_pos": 1253,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RH3",
+          "x_pos": 1287,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RH4",
+          "x_pos": 1321,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RH5",
+          "x_pos": 1355,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RH6",
+          "x_pos": 1389,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RH7",
+          "x_pos": 1423,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RH8",
+          "x_pos": 1457,
+          "y_pos": 432,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RI1",
+          "x_pos": 1219,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RI2",
+          "x_pos": 1253,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RI3",
+          "x_pos": 1287,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RI4",
+          "x_pos": 1321,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RI5",
+          "x_pos": 1355,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RI6",
+          "x_pos": 1389,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RI7",
+          "x_pos": 1423,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RI8",
+          "x_pos": 1457,
+          "y_pos": 468,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RJ1",
+          "x_pos": 1219,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RJ2",
+          "x_pos": 1253,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RJ3",
+          "x_pos": 1287,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RJ4",
+          "x_pos": 1321,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RJ5",
+          "x_pos": 1355,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RJ6",
+          "x_pos": 1389,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RJ7",
+          "x_pos": 1423,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RJ8",
+          "x_pos": 1457,
+          "y_pos": 504,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RK1",
+          "x_pos": 1219,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RK2",
+          "x_pos": 1253,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RK3",
+          "x_pos": 1287,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RK4",
+          "x_pos": 1321,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RK5",
+          "x_pos": 1355,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RK6",
+          "x_pos": 1389,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RK7",
+          "x_pos": 1423,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RK8",
+          "x_pos": 1457,
+          "y_pos": 540,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RL1",
+          "x_pos": 1219,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RL2",
+          "x_pos": 1253,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RL3",
+          "x_pos": 1287,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RL4",
+          "x_pos": 1321,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RL5",
+          "x_pos": 1355,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RL6",
+          "x_pos": 1389,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RL7",
+          "x_pos": 1423,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RL8",
+          "x_pos": 1457,
+          "y_pos": 576,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RM1",
+          "x_pos": 1219,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RM2",
+          "x_pos": 1253,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RM3",
+          "x_pos": 1287,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RM4",
+          "x_pos": 1321,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RM5",
+          "x_pos": 1355,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RM6",
+          "x_pos": 1389,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RM7",
+          "x_pos": 1423,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RM8",
+          "x_pos": 1457,
+          "y_pos": 612,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RN1",
+          "x_pos": 1219,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RN2",
+          "x_pos": 1253,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RN3",
+          "x_pos": 1287,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RN4",
+          "x_pos": 1321,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RN5",
+          "x_pos": 1355,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RN6",
+          "x_pos": 1389,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RN7",
+          "x_pos": 1423,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "RN8",
+          "x_pos": 1457,
+          "y_pos": 648,
+          "product_name": "Standard"
+        },
+        {
+          "label": "B1-1",
+          "x_pos": 148,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B1-2",
+          "x_pos": 178,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B1-3",
+          "x_pos": 208,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B1-4",
+          "x_pos": 148,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B1-5",
+          "x_pos": 178,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B1-6",
+          "x_pos": 208,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B1-7",
+          "x_pos": 148,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B1-8",
+          "x_pos": 178,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B1-9",
+          "x_pos": 208,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-1",
+          "x_pos": 343,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-2",
+          "x_pos": 373,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-3",
+          "x_pos": 403,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-4",
+          "x_pos": 343,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-5",
+          "x_pos": 373,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-6",
+          "x_pos": 403,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-7",
+          "x_pos": 343,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-8",
+          "x_pos": 373,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B2-9",
+          "x_pos": 403,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-1",
+          "x_pos": 538,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-2",
+          "x_pos": 568,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-3",
+          "x_pos": 598,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-4",
+          "x_pos": 538,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-5",
+          "x_pos": 568,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-6",
+          "x_pos": 598,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-7",
+          "x_pos": 538,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-8",
+          "x_pos": 568,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B3-9",
+          "x_pos": 598,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-1",
+          "x_pos": 733,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-2",
+          "x_pos": 763,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-3",
+          "x_pos": 793,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-4",
+          "x_pos": 733,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-5",
+          "x_pos": 763,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-6",
+          "x_pos": 793,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-7",
+          "x_pos": 733,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-8",
+          "x_pos": 763,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B4-9",
+          "x_pos": 793,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-1",
+          "x_pos": 928,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-2",
+          "x_pos": 958,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-3",
+          "x_pos": 988,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-4",
+          "x_pos": 928,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-5",
+          "x_pos": 958,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-6",
+          "x_pos": 988,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-7",
+          "x_pos": 928,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-8",
+          "x_pos": 958,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B5-9",
+          "x_pos": 988,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-1",
+          "x_pos": 1123,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-2",
+          "x_pos": 1153,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-3",
+          "x_pos": 1183,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-4",
+          "x_pos": 1123,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-5",
+          "x_pos": 1153,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-6",
+          "x_pos": 1183,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-7",
+          "x_pos": 1123,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-8",
+          "x_pos": 1153,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B6-9",
+          "x_pos": 1183,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-1",
+          "x_pos": 1318,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-2",
+          "x_pos": 1348,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-3",
+          "x_pos": 1378,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-4",
+          "x_pos": 1318,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-5",
+          "x_pos": 1348,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-6",
+          "x_pos": 1378,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-7",
+          "x_pos": 1318,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-8",
+          "x_pos": 1348,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B7-9",
+          "x_pos": 1378,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-1",
+          "x_pos": 1513,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-2",
+          "x_pos": 1543,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-3",
+          "x_pos": 1573,
+          "y_pos": 703,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-4",
+          "x_pos": 1513,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-5",
+          "x_pos": 1543,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-6",
+          "x_pos": 1573,
+          "y_pos": 733,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-7",
+          "x_pos": 1513,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-8",
+          "x_pos": 1543,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "B8-9",
+          "x_pos": 1573,
+          "y_pos": 763,
+          "product_name": "Box"
+        },
+        {
+          "label": "BLA1",
+          "x_pos": 1396,
+          "y_pos": 813,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA2",
+          "x_pos": 1368,
+          "y_pos": 822,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA3",
+          "x_pos": 1340,
+          "y_pos": 832,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA4",
+          "x_pos": 1311,
+          "y_pos": 840,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA5",
+          "x_pos": 1282,
+          "y_pos": 849,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA6",
+          "x_pos": 1254,
+          "y_pos": 856,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA7",
+          "x_pos": 1225,
+          "y_pos": 863,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA8",
+          "x_pos": 1196,
+          "y_pos": 870,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA9",
+          "x_pos": 1166,
+          "y_pos": 875,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA10",
+          "x_pos": 1137,
+          "y_pos": 880,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA11",
+          "x_pos": 1108,
+          "y_pos": 885,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA12",
+          "x_pos": 1078,
+          "y_pos": 889,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA13",
+          "x_pos": 1049,
+          "y_pos": 892,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA14",
+          "x_pos": 1019,
+          "y_pos": 895,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA15",
+          "x_pos": 989,
+          "y_pos": 897,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA16",
+          "x_pos": 960,
+          "y_pos": 899,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA17",
+          "x_pos": 930,
+          "y_pos": 900,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA18",
+          "x_pos": 900,
+          "y_pos": 900,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA19",
+          "x_pos": 870,
+          "y_pos": 900,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA20",
+          "x_pos": 840,
+          "y_pos": 899,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA21",
+          "x_pos": 811,
+          "y_pos": 897,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA22",
+          "x_pos": 781,
+          "y_pos": 895,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA23",
+          "x_pos": 751,
+          "y_pos": 892,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA24",
+          "x_pos": 722,
+          "y_pos": 889,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA25",
+          "x_pos": 692,
+          "y_pos": 885,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA26",
+          "x_pos": 663,
+          "y_pos": 880,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA27",
+          "x_pos": 634,
+          "y_pos": 875,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA28",
+          "x_pos": 604,
+          "y_pos": 870,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA29",
+          "x_pos": 575,
+          "y_pos": 863,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA30",
+          "x_pos": 546,
+          "y_pos": 856,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA31",
+          "x_pos": 518,
+          "y_pos": 849,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA32",
+          "x_pos": 489,
+          "y_pos": 840,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA33",
+          "x_pos": 460,
+          "y_pos": 832,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA34",
+          "x_pos": 432,
+          "y_pos": 822,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLA35",
+          "x_pos": 404,
+          "y_pos": 813,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB1",
+          "x_pos": 1408,
+          "y_pos": 845,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB2",
+          "x_pos": 1379,
+          "y_pos": 855,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB3",
+          "x_pos": 1350,
+          "y_pos": 864,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB4",
+          "x_pos": 1321,
+          "y_pos": 873,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB5",
+          "x_pos": 1291,
+          "y_pos": 881,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB6",
+          "x_pos": 1262,
+          "y_pos": 889,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB7",
+          "x_pos": 1232,
+          "y_pos": 896,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB8",
+          "x_pos": 1203,
+          "y_pos": 903,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB9",
+          "x_pos": 1173,
+          "y_pos": 909,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB10",
+          "x_pos": 1143,
+          "y_pos": 914,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB11",
+          "x_pos": 1113,
+          "y_pos": 919,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB12",
+          "x_pos": 1082,
+          "y_pos": 923,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB13",
+          "x_pos": 1052,
+          "y_pos": 926,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB14",
+          "x_pos": 1022,
+          "y_pos": 929,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB15",
+          "x_pos": 991,
+          "y_pos": 931,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB16",
+          "x_pos": 961,
+          "y_pos": 933,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB17",
+          "x_pos": 930,
+          "y_pos": 934,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB18",
+          "x_pos": 900,
+          "y_pos": 934,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB19",
+          "x_pos": 870,
+          "y_pos": 934,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB20",
+          "x_pos": 839,
+          "y_pos": 933,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB21",
+          "x_pos": 809,
+          "y_pos": 931,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB22",
+          "x_pos": 778,
+          "y_pos": 929,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB23",
+          "x_pos": 748,
+          "y_pos": 926,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB24",
+          "x_pos": 718,
+          "y_pos": 923,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB25",
+          "x_pos": 687,
+          "y_pos": 919,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB26",
+          "x_pos": 657,
+          "y_pos": 914,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB27",
+          "x_pos": 627,
+          "y_pos": 909,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB28",
+          "x_pos": 597,
+          "y_pos": 903,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB29",
+          "x_pos": 568,
+          "y_pos": 896,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB30",
+          "x_pos": 538,
+          "y_pos": 889,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB31",
+          "x_pos": 509,
+          "y_pos": 881,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB32",
+          "x_pos": 479,
+          "y_pos": 873,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB33",
+          "x_pos": 450,
+          "y_pos": 864,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB34",
+          "x_pos": 421,
+          "y_pos": 855,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLB35",
+          "x_pos": 392,
+          "y_pos": 845,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC1",
+          "x_pos": 1419,
+          "y_pos": 876,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC2",
+          "x_pos": 1390,
+          "y_pos": 887,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC3",
+          "x_pos": 1360,
+          "y_pos": 897,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC4",
+          "x_pos": 1330,
+          "y_pos": 906,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC5",
+          "x_pos": 1300,
+          "y_pos": 914,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC6",
+          "x_pos": 1270,
+          "y_pos": 922,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC7",
+          "x_pos": 1240,
+          "y_pos": 929,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC8",
+          "x_pos": 1210,
+          "y_pos": 936,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC9",
+          "x_pos": 1179,
+          "y_pos": 942,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC10",
+          "x_pos": 1148,
+          "y_pos": 948,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC11",
+          "x_pos": 1117,
+          "y_pos": 952,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC12",
+          "x_pos": 1087,
+          "y_pos": 956,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC13",
+          "x_pos": 1056,
+          "y_pos": 960,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC14",
+          "x_pos": 1025,
+          "y_pos": 963,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC15",
+          "x_pos": 993,
+          "y_pos": 965,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC16",
+          "x_pos": 962,
+          "y_pos": 967,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC17",
+          "x_pos": 931,
+          "y_pos": 968,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC18",
+          "x_pos": 900,
+          "y_pos": 968,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC19",
+          "x_pos": 869,
+          "y_pos": 968,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC20",
+          "x_pos": 838,
+          "y_pos": 967,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC21",
+          "x_pos": 807,
+          "y_pos": 965,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC22",
+          "x_pos": 775,
+          "y_pos": 963,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC23",
+          "x_pos": 744,
+          "y_pos": 960,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC24",
+          "x_pos": 713,
+          "y_pos": 956,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC25",
+          "x_pos": 683,
+          "y_pos": 952,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC26",
+          "x_pos": 652,
+          "y_pos": 948,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC27",
+          "x_pos": 621,
+          "y_pos": 942,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC28",
+          "x_pos": 590,
+          "y_pos": 936,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC29",
+          "x_pos": 560,
+          "y_pos": 929,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC30",
+          "x_pos": 530,
+          "y_pos": 922,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC31",
+          "x_pos": 500,
+          "y_pos": 914,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC32",
+          "x_pos": 470,
+          "y_pos": 906,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC33",
+          "x_pos": 440,
+          "y_pos": 897,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC34",
+          "x_pos": 410,
+          "y_pos": 887,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLC35",
+          "x_pos": 381,
+          "y_pos": 876,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD1",
+          "x_pos": 1431,
+          "y_pos": 908,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD2",
+          "x_pos": 1401,
+          "y_pos": 919,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD3",
+          "x_pos": 1370,
+          "y_pos": 929,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD4",
+          "x_pos": 1340,
+          "y_pos": 938,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD5",
+          "x_pos": 1309,
+          "y_pos": 947,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD6",
+          "x_pos": 1279,
+          "y_pos": 955,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD7",
+          "x_pos": 1248,
+          "y_pos": 963,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD8",
+          "x_pos": 1216,
+          "y_pos": 969,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD9",
+          "x_pos": 1185,
+          "y_pos": 976,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD10",
+          "x_pos": 1154,
+          "y_pos": 981,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD11",
+          "x_pos": 1122,
+          "y_pos": 986,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD12",
+          "x_pos": 1091,
+          "y_pos": 990,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD13",
+          "x_pos": 1059,
+          "y_pos": 994,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD14",
+          "x_pos": 1027,
+          "y_pos": 997,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD15",
+          "x_pos": 996,
+          "y_pos": 999,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD16",
+          "x_pos": 964,
+          "y_pos": 1001,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD17",
+          "x_pos": 932,
+          "y_pos": 1002,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD18",
+          "x_pos": 900,
+          "y_pos": 1002,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD19",
+          "x_pos": 868,
+          "y_pos": 1002,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD20",
+          "x_pos": 836,
+          "y_pos": 1001,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD21",
+          "x_pos": 804,
+          "y_pos": 999,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD22",
+          "x_pos": 773,
+          "y_pos": 997,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD23",
+          "x_pos": 741,
+          "y_pos": 994,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD24",
+          "x_pos": 709,
+          "y_pos": 990,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD25",
+          "x_pos": 678,
+          "y_pos": 986,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD26",
+          "x_pos": 646,
+          "y_pos": 981,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD27",
+          "x_pos": 615,
+          "y_pos": 976,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD28",
+          "x_pos": 584,
+          "y_pos": 969,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD29",
+          "x_pos": 552,
+          "y_pos": 963,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD30",
+          "x_pos": 521,
+          "y_pos": 955,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD31",
+          "x_pos": 491,
+          "y_pos": 947,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD32",
+          "x_pos": 460,
+          "y_pos": 938,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD33",
+          "x_pos": 430,
+          "y_pos": 929,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD34",
+          "x_pos": 399,
+          "y_pos": 919,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLD35",
+          "x_pos": 369,
+          "y_pos": 908,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE1",
+          "x_pos": 1442,
+          "y_pos": 940,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE2",
+          "x_pos": 1412,
+          "y_pos": 951,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE3",
+          "x_pos": 1381,
+          "y_pos": 961,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE4",
+          "x_pos": 1350,
+          "y_pos": 971,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE5",
+          "x_pos": 1318,
+          "y_pos": 980,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE6",
+          "x_pos": 1287,
+          "y_pos": 988,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE7",
+          "x_pos": 1255,
+          "y_pos": 996,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE8",
+          "x_pos": 1223,
+          "y_pos": 1003,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE9",
+          "x_pos": 1191,
+          "y_pos": 1009,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE10",
+          "x_pos": 1159,
+          "y_pos": 1015,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE11",
+          "x_pos": 1127,
+          "y_pos": 1020,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE12",
+          "x_pos": 1095,
+          "y_pos": 1024,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE13",
+          "x_pos": 1063,
+          "y_pos": 1028,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE14",
+          "x_pos": 1030,
+          "y_pos": 1031,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE15",
+          "x_pos": 998,
+          "y_pos": 1033,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE16",
+          "x_pos": 965,
+          "y_pos": 1035,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE17",
+          "x_pos": 933,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE18",
+          "x_pos": 900,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE19",
+          "x_pos": 867,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE20",
+          "x_pos": 835,
+          "y_pos": 1035,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE21",
+          "x_pos": 802,
+          "y_pos": 1033,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE22",
+          "x_pos": 770,
+          "y_pos": 1031,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE23",
+          "x_pos": 737,
+          "y_pos": 1028,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE24",
+          "x_pos": 705,
+          "y_pos": 1024,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE25",
+          "x_pos": 673,
+          "y_pos": 1020,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE26",
+          "x_pos": 641,
+          "y_pos": 1015,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE27",
+          "x_pos": 609,
+          "y_pos": 1009,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE28",
+          "x_pos": 577,
+          "y_pos": 1003,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE29",
+          "x_pos": 545,
+          "y_pos": 996,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE30",
+          "x_pos": 513,
+          "y_pos": 988,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE31",
+          "x_pos": 482,
+          "y_pos": 980,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE32",
+          "x_pos": 450,
+          "y_pos": 971,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE33",
+          "x_pos": 419,
+          "y_pos": 961,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE34",
+          "x_pos": 388,
+          "y_pos": 951,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLE35",
+          "x_pos": 358,
+          "y_pos": 940,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF1",
+          "x_pos": 1454,
+          "y_pos": 972,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF2",
+          "x_pos": 1423,
+          "y_pos": 983,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF3",
+          "x_pos": 1391,
+          "y_pos": 994,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF4",
+          "x_pos": 1359,
+          "y_pos": 1004,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF5",
+          "x_pos": 1327,
+          "y_pos": 1013,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF6",
+          "x_pos": 1295,
+          "y_pos": 1021,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF7",
+          "x_pos": 1263,
+          "y_pos": 1029,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF8",
+          "x_pos": 1230,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF9",
+          "x_pos": 1198,
+          "y_pos": 1042,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF10",
+          "x_pos": 1165,
+          "y_pos": 1048,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF11",
+          "x_pos": 1132,
+          "y_pos": 1053,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF12",
+          "x_pos": 1099,
+          "y_pos": 1058,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF13",
+          "x_pos": 1066,
+          "y_pos": 1061,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF14",
+          "x_pos": 1033,
+          "y_pos": 1065,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF15",
+          "x_pos": 1000,
+          "y_pos": 1067,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF16",
+          "x_pos": 967,
+          "y_pos": 1069,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF17",
+          "x_pos": 933,
+          "y_pos": 1070,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF18",
+          "x_pos": 900,
+          "y_pos": 1070,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF19",
+          "x_pos": 867,
+          "y_pos": 1070,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF20",
+          "x_pos": 833,
+          "y_pos": 1069,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF21",
+          "x_pos": 800,
+          "y_pos": 1067,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF22",
+          "x_pos": 767,
+          "y_pos": 1065,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF23",
+          "x_pos": 734,
+          "y_pos": 1061,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF24",
+          "x_pos": 701,
+          "y_pos": 1058,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF25",
+          "x_pos": 668,
+          "y_pos": 1053,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF26",
+          "x_pos": 635,
+          "y_pos": 1048,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF27",
+          "x_pos": 602,
+          "y_pos": 1042,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF28",
+          "x_pos": 570,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF29",
+          "x_pos": 537,
+          "y_pos": 1029,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF30",
+          "x_pos": 505,
+          "y_pos": 1021,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF31",
+          "x_pos": 473,
+          "y_pos": 1013,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF32",
+          "x_pos": 441,
+          "y_pos": 1004,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF33",
+          "x_pos": 409,
+          "y_pos": 994,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF34",
+          "x_pos": 377,
+          "y_pos": 983,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLF35",
+          "x_pos": 346,
+          "y_pos": 972,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG1",
+          "x_pos": 1466,
+          "y_pos": 1004,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG2",
+          "x_pos": 1434,
+          "y_pos": 1016,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG3",
+          "x_pos": 1401,
+          "y_pos": 1026,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG4",
+          "x_pos": 1369,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG5",
+          "x_pos": 1336,
+          "y_pos": 1045,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG6",
+          "x_pos": 1303,
+          "y_pos": 1054,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG7",
+          "x_pos": 1270,
+          "y_pos": 1062,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG8",
+          "x_pos": 1237,
+          "y_pos": 1069,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG9",
+          "x_pos": 1204,
+          "y_pos": 1076,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG10",
+          "x_pos": 1170,
+          "y_pos": 1082,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG11",
+          "x_pos": 1137,
+          "y_pos": 1087,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG12",
+          "x_pos": 1103,
+          "y_pos": 1091,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG13",
+          "x_pos": 1070,
+          "y_pos": 1095,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG14",
+          "x_pos": 1036,
+          "y_pos": 1098,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG15",
+          "x_pos": 1002,
+          "y_pos": 1101,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG16",
+          "x_pos": 968,
+          "y_pos": 1103,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG17",
+          "x_pos": 934,
+          "y_pos": 1104,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG18",
+          "x_pos": 900,
+          "y_pos": 1104,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG19",
+          "x_pos": 866,
+          "y_pos": 1104,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG20",
+          "x_pos": 832,
+          "y_pos": 1103,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG21",
+          "x_pos": 798,
+          "y_pos": 1101,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG22",
+          "x_pos": 764,
+          "y_pos": 1098,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG23",
+          "x_pos": 730,
+          "y_pos": 1095,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG24",
+          "x_pos": 697,
+          "y_pos": 1091,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG25",
+          "x_pos": 663,
+          "y_pos": 1087,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG26",
+          "x_pos": 630,
+          "y_pos": 1082,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG27",
+          "x_pos": 596,
+          "y_pos": 1076,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG28",
+          "x_pos": 563,
+          "y_pos": 1069,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG29",
+          "x_pos": 530,
+          "y_pos": 1062,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG30",
+          "x_pos": 497,
+          "y_pos": 1054,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG31",
+          "x_pos": 464,
+          "y_pos": 1045,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG32",
+          "x_pos": 431,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG33",
+          "x_pos": 399,
+          "y_pos": 1026,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG34",
+          "x_pos": 366,
+          "y_pos": 1016,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLG35",
+          "x_pos": 334,
+          "y_pos": 1004,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH1",
+          "x_pos": 1477,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH2",
+          "x_pos": 1445,
+          "y_pos": 1048,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH3",
+          "x_pos": 1412,
+          "y_pos": 1059,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH4",
+          "x_pos": 1379,
+          "y_pos": 1069,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH5",
+          "x_pos": 1345,
+          "y_pos": 1078,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH6",
+          "x_pos": 1312,
+          "y_pos": 1087,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH7",
+          "x_pos": 1278,
+          "y_pos": 1095,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH8",
+          "x_pos": 1244,
+          "y_pos": 1103,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH9",
+          "x_pos": 1210,
+          "y_pos": 1109,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH10",
+          "x_pos": 1176,
+          "y_pos": 1115,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH11",
+          "x_pos": 1142,
+          "y_pos": 1121,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH12",
+          "x_pos": 1107,
+          "y_pos": 1125,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH13",
+          "x_pos": 1073,
+          "y_pos": 1129,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH14",
+          "x_pos": 1038,
+          "y_pos": 1132,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH15",
+          "x_pos": 1004,
+          "y_pos": 1135,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH16",
+          "x_pos": 969,
+          "y_pos": 1137,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH17",
+          "x_pos": 935,
+          "y_pos": 1138,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH18",
+          "x_pos": 900,
+          "y_pos": 1138,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH19",
+          "x_pos": 865,
+          "y_pos": 1138,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH20",
+          "x_pos": 831,
+          "y_pos": 1137,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH21",
+          "x_pos": 796,
+          "y_pos": 1135,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH22",
+          "x_pos": 762,
+          "y_pos": 1132,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH23",
+          "x_pos": 727,
+          "y_pos": 1129,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH24",
+          "x_pos": 693,
+          "y_pos": 1125,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH25",
+          "x_pos": 658,
+          "y_pos": 1121,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH26",
+          "x_pos": 624,
+          "y_pos": 1115,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH27",
+          "x_pos": 590,
+          "y_pos": 1109,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH28",
+          "x_pos": 556,
+          "y_pos": 1103,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH29",
+          "x_pos": 522,
+          "y_pos": 1095,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH30",
+          "x_pos": 488,
+          "y_pos": 1087,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH31",
+          "x_pos": 455,
+          "y_pos": 1078,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH32",
+          "x_pos": 421,
+          "y_pos": 1069,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH33",
+          "x_pos": 388,
+          "y_pos": 1059,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH34",
+          "x_pos": 355,
+          "y_pos": 1048,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        },
+        {
+          "label": "BLH35",
+          "x_pos": 323,
+          "y_pos": 1036,
+          "product_name": "Balcony",
+          "arc_id": "a69e618f-90f8-4316-85a8-be7d4c6fa403"
+        }
+      ],
+      "labels": [
+        {
+          "text": "PREMIUM",
+          "x_pos": 320,
+          "y_pos": 216,
+          "color": "#e2e8f0",
+          "font_family": "sans-serif",
+          "font_size": 22,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": false
+        },
+        {
+          "text": "STANDARD",
+          "x_pos": 320,
+          "y_pos": 468,
+          "color": "#e2e8f0",
+          "font_family": "sans-serif",
+          "font_size": 22,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": false
+        },
+        {
+          "text": "BOXES",
+          "x_pos": 320,
+          "y_pos": 718,
+          "color": "#e2e8f0",
+          "font_family": "sans-serif",
+          "font_size": 22,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": false
+        },
+        {
+          "text": "BALCONY",
+          "x_pos": 320,
+          "y_pos": 980,
+          "color": "#e2e8f0",
+          "font_family": "sans-serif",
+          "font_size": 22,
+          "bold": true,
+          "italic": false,
+          "align": "right",
+          "rotation": 0,
+          "row": false
+        }
+      ],
+      "floor_elements": [
+        {
+          "type": "stage",
+          "x_pos": 400,
+          "y_pos": 48,
+          "width": 1000,
+          "height": 56,
+          "rotation": 0,
+          "fill": "#0f172a",
+          "stroke": "#334155",
+          "stroke_width": 2,
+          "label": "SCREEN",
+          "font_size": 30
+        },
+        {
+          "type": "line",
+          "x_pos": 613,
+          "y_pos": 165,
+          "width": 0,
+          "height": 500,
+          "points": [
+            0,
+            0,
+            0,
+            500
+          ],
+          "rotation": 0,
+          "fill": "#e2e8f0",
+          "stroke": "#475569",
+          "stroke_width": 2,
+          "label": "",
+          "font_size": 18
+        },
+        {
+          "type": "line",
+          "x_pos": 1187,
+          "y_pos": 165,
+          "width": 0,
+          "height": 500,
+          "points": [
+            0,
+            0,
+            0,
+            500
+          ],
+          "rotation": 0,
+          "fill": "#e2e8f0",
+          "stroke": "#475569",
+          "stroke_width": 2,
+          "label": "",
+          "font_size": 18
+        },
+        {
+          "type": "arc",
+          "x_pos": 350,
+          "y_pos": 790,
+          "width": 1100,
+          "height": 40,
+          "points": [
+            0,
+            20,
+            3,
+            18,
+            14,
+            16,
+            31,
+            13,
+            54,
+            11,
+            84,
+            9,
+            120,
+            8,
+            161,
+            6,
+            207,
+            4,
+            257,
+            3,
+            311,
+            2,
+            368,
+            1,
+            428,
+            1,
+            488,
+            0,
+            550,
+            0,
+            612,
+            0,
+            672,
+            1,
+            732,
+            1,
+            789,
+            2,
+            843,
+            3,
+            893,
+            4,
+            939,
+            6,
+            980,
+            8,
+            1016,
+            9,
+            1046,
+            11,
+            1069,
+            13,
+            1086,
+            16,
+            1097,
+            18,
+            1100,
+            20
+          ],
+          "rotation": 0,
+          "fill": "#64748b",
+          "stroke": "#64748b",
+          "stroke_width": 3,
+          "label": "",
+          "font_size": 18
+        },
+        {
+          "type": "rect",
+          "x_pos": 130,
+          "y_pos": 685,
+          "width": 96,
+          "height": 96,
+          "rotation": 0,
+          "fill": "#c4b5fd",
+          "stroke": "#7c3aed",
+          "stroke_width": 2,
+          "label": "B1",
+          "font_size": 14
+        },
+        {
+          "type": "rect",
+          "x_pos": 325,
+          "y_pos": 685,
+          "width": 96,
+          "height": 96,
+          "rotation": 0,
+          "fill": "#c4b5fd",
+          "stroke": "#7c3aed",
+          "stroke_width": 2,
+          "label": "B2",
+          "font_size": 14
+        },
+        {
+          "type": "rect",
+          "x_pos": 520,
+          "y_pos": 685,
+          "width": 96,
+          "height": 96,
+          "rotation": 0,
+          "fill": "#c4b5fd",
+          "stroke": "#7c3aed",
+          "stroke_width": 2,
+          "label": "B3",
+          "font_size": 14
+        },
+        {
+          "type": "rect",
+          "x_pos": 715,
+          "y_pos": 685,
+          "width": 96,
+          "height": 96,
+          "rotation": 0,
+          "fill": "#c4b5fd",
+          "stroke": "#7c3aed",
+          "stroke_width": 2,
+          "label": "B4",
+          "font_size": 14
+        },
+        {
+          "type": "rect",
+          "x_pos": 910,
+          "y_pos": 685,
+          "width": 96,
+          "height": 96,
+          "rotation": 0,
+          "fill": "#c4b5fd",
+          "stroke": "#7c3aed",
+          "stroke_width": 2,
+          "label": "B5",
+          "font_size": 14
+        },
+        {
+          "type": "rect",
+          "x_pos": 1105,
+          "y_pos": 685,
+          "width": 96,
+          "height": 96,
+          "rotation": 0,
+          "fill": "#c4b5fd",
+          "stroke": "#7c3aed",
+          "stroke_width": 2,
+          "label": "B6",
+          "font_size": 14
+        },
+        {
+          "type": "rect",
+          "x_pos": 1300,
+          "y_pos": 685,
+          "width": 96,
+          "height": 96,
+          "rotation": 0,
+          "fill": "#c4b5fd",
+          "stroke": "#7c3aed",
+          "stroke_width": 2,
+          "label": "B7",
+          "font_size": 14
+        },
+        {
+          "type": "rect",
+          "x_pos": 1495,
+          "y_pos": 685,
+          "width": 96,
+          "height": 96,
+          "rotation": 0,
+          "fill": "#c4b5fd",
+          "stroke": "#7c3aed",
+          "stroke_width": 2,
+          "label": "B8",
+          "font_size": 14
+        }
+      ],
+      "arc_blocks": [
+        {
+          "id": "a69e618f-90f8-4316-85a8-be7d4c6fa403",
+          "center_x": 900,
+          "center_y": -550,
+          "base_radius": 1450,
+          "row_gap": 34,
+          "rows": 8,
+          "cols": 35,
+          "start_angle": 70,
+          "end_angle": 110,
+          "prefix": "BL",
+          "row_start": "A",
+          "seat_start": 1,
+          "product_name": "Balcony"
+        }
+      ]
+    }
+  ]
+}

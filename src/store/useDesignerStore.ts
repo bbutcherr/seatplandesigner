@@ -9,6 +9,7 @@ import type {
   Product,
   Project,
   Seat,
+  Zone,
 } from '../types'
 import { rowToken } from '../lib/labels'
 import { generateArcBlock } from '../lib/seatGenerators'
@@ -74,6 +75,7 @@ function defaultPlan(name = 'Plan 1'): Plan {
     floorElements: [],
     labels: [],
     arcBlocks: [],
+    zones: [],
   }
 }
 
@@ -128,8 +130,10 @@ export type Tool =
   | 'floor-stage'
   | 'floor-line'
   | 'floor-circle'
+  | 'floor-arc'
   | 'floor-text'
   | 'label'
+  | 'zone'
 
 interface DesignerState {
   project: Project
@@ -139,6 +143,7 @@ interface DesignerState {
   selectedFloorId: ID | null
   selectedLabelId: ID | null
   selectedArcId: ID | null
+  selectedZoneId: ID | null
   clipboard: Clipboard | null
   pasteSeq: number
   snapEnabled: boolean
@@ -195,6 +200,13 @@ interface DesignerState {
   deleteArcBlock: (id: ID) => void
   selectArcBlock: (id: ID | null) => void
 
+  // ---- zones (bookable areas) -------------------------------------------
+  addZone: (zone: Omit<Zone, 'id' | 'productId'> & { productId?: ID }) => ID
+  updateZone: (id: ID, patch: Partial<Omit<Zone, 'id'>>) => void
+  deleteZone: (id: ID) => void
+  selectZone: (id: ID | null) => void
+  moveZone: (id: ID, dx: number, dy: number) => void
+
   // ---- labels -----------------------------------------------------------
   addLabel: (patch: Partial<Label>) => ID
   updateLabel: (id: ID, patch: Partial<Omit<Label, 'id'>>) => void
@@ -237,6 +249,7 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
     selectedFloorId: null,
     selectedLabelId: null,
     selectedArcId: null,
+    selectedZoneId: null,
     clipboard: null,
     pasteSeq: 0,
     snapEnabled: true,
@@ -262,6 +275,7 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
           selectedFloorId: null,
           selectedLabelId: null,
           selectedArcId: null,
+          selectedZoneId: null,
         }
       }),
 
@@ -309,6 +323,7 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
           floorElements: src.floorElements.map((f) => ({ ...f, id: uid() })),
           labels: src.labels.map((l) => ({ ...l, id: uid() })),
           arcBlocks,
+          zones: src.zones.map((z) => ({ ...z, id: uid(), productId: idMap.get(z.productId) ?? products[0]?.id })),
         }
         return {
           project: {
@@ -355,6 +370,7 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
           selectedFloorId: null,
           selectedLabelId: null,
           selectedArcId: null,
+          selectedZoneId: null,
           tool: 'select',
         }
       }),
@@ -718,12 +734,12 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
       })),
 
     setSelectedSeats: (ids) =>
-      set({ selectedSeatIds: ids, selectedFloorId: null, selectedLabelId: null, selectedArcId: null }),
+      set({ selectedSeatIds: ids, selectedFloorId: null, selectedLabelId: null, selectedArcId: null, selectedZoneId: null }),
 
     toggleSeat: (id, additive) =>
       set((s) => {
         if (!additive)
-          return { selectedSeatIds: [id], selectedFloorId: null, selectedLabelId: null, selectedArcId: null }
+          return { selectedSeatIds: [id], selectedFloorId: null, selectedLabelId: null, selectedArcId: null, selectedZoneId: null }
         return {
           selectedSeatIds: s.selectedSeatIds.includes(id)
             ? s.selectedSeatIds.filter((x) => x !== id)
@@ -731,14 +747,15 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
           selectedFloorId: null,
           selectedLabelId: null,
           selectedArcId: null,
+          selectedZoneId: null,
         }
       }),
 
     clearSelection: () =>
-      set({ selectedSeatIds: [], selectedFloorId: null, selectedLabelId: null, selectedArcId: null }),
+      set({ selectedSeatIds: [], selectedFloorId: null, selectedLabelId: null, selectedArcId: null, selectedZoneId: null }),
 
     selectFloor: (id) =>
-      set({ selectedFloorId: id, selectedSeatIds: [], selectedLabelId: null, selectedArcId: null }),
+      set({ selectedFloorId: id, selectedSeatIds: [], selectedLabelId: null, selectedArcId: null, selectedZoneId: null }),
 
     createArcBlock: (params) =>
       set((s) => {
@@ -845,7 +862,53 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
       })),
 
     selectArcBlock: (id) =>
-      set({ selectedArcId: id, selectedSeatIds: [], selectedFloorId: null, selectedLabelId: null }),
+      set({ selectedArcId: id, selectedSeatIds: [], selectedFloorId: null, selectedLabelId: null, selectedZoneId: null }),
+
+    addZone: (zone) => {
+      const id = uid()
+      set((s) => ({
+        project: withActivePlan(s.project, (plan) => ({
+          ...plan,
+          zones: [...plan.zones, { ...zone, id, productId: zone.productId ?? s.activeProductId }],
+        })),
+        selectedZoneId: id,
+        selectedSeatIds: [],
+        selectedFloorId: null,
+        selectedLabelId: null,
+        selectedArcId: null,
+      }))
+      return id
+    },
+
+    updateZone: (id, patch) =>
+      set((s) => ({
+        project: withActivePlan(s.project, (plan) => ({
+          ...plan,
+          zones: plan.zones.map((z) => (z.id === id ? { ...z, ...patch } : z)),
+        })),
+      })),
+
+    deleteZone: (id) =>
+      set((s) => ({
+        project: withActivePlan(s.project, (plan) => ({
+          ...plan,
+          zones: plan.zones.filter((z) => z.id !== id),
+        })),
+        selectedZoneId: s.selectedZoneId === id ? null : s.selectedZoneId,
+      })),
+
+    selectZone: (id) =>
+      set({ selectedZoneId: id, selectedSeatIds: [], selectedFloorId: null, selectedLabelId: null, selectedArcId: null }),
+
+    moveZone: (id, dx, dy) =>
+      set((s) => ({
+        project: withActivePlan(s.project, (plan) => ({
+          ...plan,
+          zones: plan.zones.map((z) =>
+            z.id === id ? { ...z, points: z.points.map((v, i) => Math.round(v + (i % 2 === 0 ? dx : dy))) } : z,
+          ),
+        })),
+      })),
 
     addLabel: (patch) => {
       const label = makeLabel(patch)
@@ -858,6 +921,7 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
         selectedSeatIds: [],
         selectedFloorId: null,
         selectedArcId: null,
+        selectedZoneId: null,
       }))
       return label.id
     },
@@ -880,7 +944,7 @@ export const useDesignerStore = create<DesignerState>((set, get) => {
       })),
 
     selectLabel: (id) =>
-      set({ selectedLabelId: id, selectedSeatIds: [], selectedFloorId: null, selectedArcId: null }),
+      set({ selectedLabelId: id, selectedSeatIds: [], selectedFloorId: null, selectedArcId: null, selectedZoneId: null }),
 
     generateRowLabels: (gap) =>
       set((s) => {

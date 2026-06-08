@@ -40,6 +40,28 @@ body { color: var(--text); background: #f1f5f9; }
 .plan-close { background: transparent; border: none; color: #94a3b8; cursor: pointer; }
 .plan-close:hover { color: #f87171; }
 
+/* ---- JSON modal ---- */
+.json-modal-backdrop {
+  position: fixed; inset: 0; z-index: 50; background: rgba(15,23,42,0.55);
+  display: flex; align-items: center; justify-content: center; padding: 4vh 4vw;
+}
+.json-modal {
+  background: #fff; border-radius: 12px; width: min(900px, 92vw); max-height: 88vh;
+  display: flex; flex-direction: column; overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+.json-modal-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 14px; border-bottom: 1px solid var(--line); background: #f8fafc;
+}
+.json-modal-head span { font-size: 13px; color: #334155; font-weight: 600; }
+.json-modal-actions { display: flex; gap: 8px; }
+.json-modal-body {
+  margin: 0; padding: 14px; overflow: auto; flex: 1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px; line-height: 1.5; color: #0f172a; white-space: pre; tab-size: 2;
+}
+
 /* ---- layout ---- */
 .body { display: flex; flex: 1; min-height: 0; }
 .toolrail {

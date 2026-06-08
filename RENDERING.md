@@ -1,5 +1,10 @@
 # Seat-plan JSON → 1:1 rendering spec
 
+> **Policy:** an LLM serving a user composes the **plan JSON**, it does not change
+> the app's code. If a requested view can't be expressed with this schema, stop
+> and ask permission, stating it changes the **application code, not the JSON**.
+> See `LLM_GUARDRAILS.md`.
+
 This document tells a renderer (or an LLM) exactly how to draw the exported
 seating-plan JSON so it matches the designer **pixel-for-pixel**. It mirrors the
 app's own renderer (`src/lib/svg.ts`), which produces the WebP export and the
@@ -13,9 +18,11 @@ on-canvas view from the same data.
   scales to any screen.
 - **CSS is only for seat states** (available/selected/booked, hover) and page
   chrome — never for positioning.
-- **Draw order (bottom → top): background → floor_elements → seats → labels.**
+- **Draw order (bottom → top): background → floor_elements → zones → seats → labels.**
 - A seat's circle radius and fill come from its **ticket type** (see
   "Product mapping").
+- **Zones** are bookable *areas* (general admission) drawn as filled polygons
+  with a capacity — some plans use zones **instead of** seats (§7b).
 - **Do not render `arc_blocks`** — they are editor metadata; their seats are
   already in `seats[]`.
 
@@ -41,9 +48,13 @@ Each `ExportedPlan`:
   "seats": [ ... ],                // §5
   "labels": [ ... ],               // §6 (text annotations + row labels)
   "floor_elements": [ ... ],       // §7 (stage, walls, blocks…)
+  "zones": [ ... ],                // §7b bookable AREAS (may be used instead of seats)
   "arc_blocks": [ ... ]            // metadata only — DO NOT draw (§8)
 }
 ```
+
+A plan may have **seats**, **zones**, or **both**. A garden/GA plan can have an
+empty `seats` array and only `zones`.
 
 ## 2. Configuration
 
@@ -132,11 +143,14 @@ product_2, …` correspond to the **unique `product_name`s in the order they fir
 appear in `seats[]`**. Algorithm:
 
 ```js
-// 1. ordered unique product names, by first appearance in seats
+// 1. ordered unique product names, by first appearance across
+//    seats → arc_blocks → zones (so zone-only / GA plans still map correctly)
 const order = [];
 const seen = new Set();
-for (const s of plan.seats)
-  if (!seen.has(s.product_name)) { seen.add(s.product_name); order.push(s.product_name); }
+const note = (n) => { if (n && !seen.has(n)) { seen.add(n); order.push(n); } };
+for (const s of plan.seats)       note(s.product_name);
+for (const b of plan.arc_blocks)  note(b.product_name);
+for (const z of plan.zones)       note(z.product_name);
 
 // 2. the i-th name maps to key product_(i+1)
 const keyFor   = (name) => `product_${order.indexOf(name) + 1}`;
@@ -196,6 +210,34 @@ Inside the group (local coordinates), by `type`:
 - **`line`** — `<polyline points="{points as 'x0,y0 x1,y1 …'}" fill="none" stroke="{stroke}" stroke-width="{max(stroke_width,3)}"/>`
   `points` are **relative to (x_pos, y_pos)**; if `points` is absent use `0,0 width,height`.
 - **`text`** — `<text x="0" y="{font_size}" font-size="{font_size}" font-weight="bold" fill="{fill}" font-family="sans-serif">{label}</text>`
+
+## 7b. Zones (bookable areas) — draw after floor, before seats
+
+A **zone** is one bookable region (general admission / a whole tier or table
+area) instead of individual seats — capacity-based, not seat-by-seat. Each:
+
+```jsonc
+{ "label": "VIP", "points": [570,170, 930,170, 1008,330, 492,330],  // polygon, absolute
+  "color": "#e39012", "product_name": "VIP", "capacity": 60 }
+```
+
+Draw a filled polygon plus a centred label + capacity:
+
+```html
+<polygon points="{points as 'x0,y0 x1,y1 …'}" fill="{color}" fill-opacity="0.5"
+         stroke="{color}" stroke-width="2"/>
+<text x="{cx}" y="{cy}" font-size="18" font-weight="bold" text-anchor="middle"
+      fill="#f8fafc" font-family="sans-serif">{label}<tspan x="{cx}" dy="22">{capacity} cap</tspan></text>
+```
+
+- `points` is a flat array `[x0,y0,x1,y1,…]` of **absolute** polygon vertices
+  (often 4 for a quad, but any count). The `color` is the zone's own fill
+  (not necessarily a product colour). `product_name` is its ticket type;
+  `capacity` is how many it admits (omit the `<tspan>` if 0).
+- `(cx, cy)` = the **centroid** (average of the vertices) for the label.
+- For booking: make the `<polygon>` the clickable element (one "button" per
+  area); colour/dim it per state via CSS like seats (§9). Show selected/sold
+  counts against `capacity`.
 
 ## 8. Arc blocks — do **not** render
 
@@ -302,6 +344,7 @@ render(plan):
   emit bg.defs; emit <rect 0 0 W H fill=bg.fill>
   if backgroundUrl: emit <image href=backgroundUrl 0 0 W H preserveAspectRatio=none>
   for f in plan.floor_elements: emit floorSvg(f)  // §7
+  for z in plan.zones: emit zoneSvg(z)            // §7b (polygon + label + capacity)
   order = uniqueProductNamesByFirstAppearance(plan.seats)   // §5 mapping
   for s in plan.seats:
      emit <circle cx=s.x_pos cy=s.y_pos r=radiusFor(s.product_name)

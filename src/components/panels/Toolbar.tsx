@@ -3,11 +3,13 @@ import { useDesignerStore, type Tool } from '../../store/useDesignerStore'
 const TOOLS: { tool: Tool; label: string; icon: string }[] = [
   { tool: 'select', label: 'Select / move', icon: '⬚' },
   { tool: 'seat-click', label: 'Place seat', icon: '◉' },
+  { tool: 'zone', label: 'Area / zone (no seats, one bookable region)', icon: '▦' },
   { tool: 'label', label: 'Place label (exported)', icon: 'T' },
   { tool: 'floor-rect', label: 'Block', icon: '▭' },
   { tool: 'floor-stage', label: 'Stage', icon: '▬' },
   { tool: 'floor-line', label: 'Wall', icon: '╱' },
   { tool: 'floor-circle', label: 'Circle', icon: '◯' },
+  { tool: 'floor-arc', label: 'Arc / curve (demarcation)', icon: '◠' },
   { tool: 'floor-text', label: 'Floor text (baked)', icon: 'T̲' },
 ]
 

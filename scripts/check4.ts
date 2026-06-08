@@ -27,7 +27,7 @@ const bundle = projectToBundle(st().project, new Date('2026-06-05T00:00:00.000Z'
 const plan0 = bundle.plans[0]
 eq(
   JSON.stringify(Object.keys(plan0)) ===
-    JSON.stringify(['name', 'configuration', 'seats', 'labels', 'floor_elements', 'arc_blocks']),
+    JSON.stringify(['name', 'configuration', 'seats', 'labels', 'floor_elements', 'arc_blocks', 'zones']),
   'plan keys include floor_elements + arc_blocks: ' + Object.keys(plan0),
 )
 eq(plan0.configuration.canvas_color === '#102030', 'canvas_color in JSON: ' + plan0.configuration.canvas_color)

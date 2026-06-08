@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "exported_at": "2026-06-08T12:00:00+00:00",
+  "source_event": "Garden",
+  "plans": [
+    {
+      "name": "Garden event",
+      "configuration": {
+        "width": 1500,
+        "height": 1140,
+        "backgroundUrl": "",
+        "seatRadius": 12,
+        "productColors": {
+          "product_1": "#e39012",
+          "product_2": "#f472b6",
+          "product_3": "#34d399"
+        },
+        "productSelectedColors": {
+          "product_1": "#ffb84d",
+          "product_2": "#ec4899",
+          "product_3": "#10b981"
+        },
+        "productSizes": {
+          "product_1": 14,
+          "product_2": 13,
+          "product_3": 12
+        },
+        "auto_zoom_enabled": true,
+        "auto_zoom_level": 5,
+        "auto_zoom_target": "both",
+        "canvas_color": "#166534",
+        "canvas_color2": "#052e16",
+        "canvas_gradient": "radial",
+        "seat_label_size": 8,
+        "show_seat_labels": true
+      },
+      "seats": [],
+      "labels": [],
+      "floor_elements": [
+        {
+          "type": "stage",
+          "x_pos": 550,
+          "y_pos": 40,
+          "width": 400,
+          "height": 64,
+          "rotation": 0,
+          "fill": "#0f172a",
+          "stroke": "#334155",
+          "stroke_width": 2,
+          "label": "STAGE",
+          "font_size": 30
+        },
+        {
+          "type": "rect",
+          "x_pos": 60,
+          "y_pos": 420,
+          "width": 92,
+          "height": 150,
+          "rotation": 0,
+          "fill": "#bfdbfe",
+          "stroke": "#1e3a8a",
+          "stroke_width": 2,
+          "label": "WC",
+          "font_size": 22
+        },
+        {
+          "type": "rect",
+          "x_pos": 1348,
+          "y_pos": 420,
+          "width": 92,
+          "height": 150,
+          "rotation": 0,
+          "fill": "#bfdbfe",
+          "stroke": "#1e3a8a",
+          "stroke_width": 2,
+          "label": "WC",
+          "font_size": 22
+        },
+        {
+          "type": "rect",
+          "x_pos": 250,
+          "y_pos": 970,
+          "width": 180,
+          "height": 86,
+          "rotation": 0,
+          "fill": "#f59e0b",
+          "stroke": "#0f172a",
+          "stroke_width": 2,
+          "label": "Burgers",
+          "font_size": 18
+        },
+        {
+          "type": "rect",
+          "x_pos": 460,
+          "y_pos": 970,
+          "width": 180,
+          "height": 86,
+          "rotation": 0,
+          "fill": "#ef4444",
+          "stroke": "#0f172a",
+          "stroke_width": 2,
+          "label": "Pizza",
+          "font_size": 18
+        },
+        {
+          "type": "rect",
+          "x_pos": 670,
+          "y_pos": 970,
+          "width": 180,
+          "height": 86,
+          "rotation": 0,
+          "fill": "#3b82f6",
+          "stroke": "#0f172a",
+          "stroke_width": 2,
+          "label": "Bar",
+          "font_size": 18
+        },
+        {
+          "type": "rect",
+          "x_pos": 880,
+          "y_pos": 970,
+          "width": 180,
+          "height": 86,
+          "rotation": 0,
+          "fill": "#a16207",
+          "stroke": "#0f172a",
+          "stroke_width": 2,
+          "label": "Coffee",
+          "font_size": 18
+        },
+        {
+          "type": "rect",
+          "x_pos": 1090,
+          "y_pos": 970,
+          "width": 180,
+          "height": 86,
+          "rotation": 0,
+          "fill": "#22c55e",
+          "stroke": "#0f172a",
+          "stroke_width": 2,
+          "label": "Sweets",
+          "font_size": 18
+        }
+      ],
+      "arc_blocks": [],
+      "zones": [
+        {
+          "label": "VIP",
+          "points": [
+            570,
+            170,
+            930,
+            170,
+            1008,
+            330,
+            492,
+            330
+          ],
+          "color": "#e39012",
+          "product_name": "VIP",
+          "capacity": 60
+        },
+        {
+          "label": "PREMIUM",
+          "points": [
+            492,
+            330,
+            1008,
+            330,
+            1105,
+            530,
+            395,
+            530
+          ],
+          "color": "#f472b6",
+          "product_name": "Premium",
+          "capacity": 140
+        },
+        {
+          "label": "STANDARD",
+          "points": [
+            395,
+            530,
+            1105,
+            530,
+            1270,
+            870,
+            230,
+            870
+          ],
+          "color": "#34d399",
+          "product_name": "Standard",
+          "capacity": 300
+        }
+      ]
+    }
+  ]
+}

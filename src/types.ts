@@ -43,7 +43,7 @@ export interface ArcBlock {
   productId: ID
 }
 
-export type FloorElementType = 'rect' | 'stage' | 'line' | 'circle' | 'text'
+export type FloorElementType = 'rect' | 'stage' | 'line' | 'circle' | 'text' | 'arc'
 
 /** A non-seat element used to draw a floor plan when there is no
  *  background image (walls, stage, blocks, text labels). These are a
@@ -96,6 +96,17 @@ export interface Configuration {
   autoZoomTarget: 'both' | 'horizontal' | 'vertical'
 }
 
+/** A bookable AREA (general-admission zone) — one clickable region instead of
+ *  individual seats, with a ticket type and a capacity. */
+export interface Zone {
+  id: ID
+  label: string
+  points: number[] // polygon vertices, absolute [x0,y0,x1,y1,…]
+  color: string // fill colour
+  productId: ID
+  capacity: number
+}
+
 export interface Plan {
   id: ID
   name: string
@@ -105,6 +116,7 @@ export interface Plan {
   floorElements: FloorElement[]
   labels: Label[]
   arcBlocks: ArcBlock[]
+  zones: Zone[]
 }
 
 export interface Project {
@@ -187,6 +199,14 @@ export interface ExportedLabel {
   row: boolean
 }
 
+export interface ExportedZone {
+  label: string
+  points: number[]
+  color: string
+  product_name: string
+  capacity: number
+}
+
 export interface ExportedPlan {
   name: string
   configuration: ExportedConfiguration
@@ -194,6 +214,7 @@ export interface ExportedPlan {
   labels: ExportedLabel[]
   floor_elements: ExportedFloorElement[]
   arc_blocks: ExportedArcBlock[]
+  zones: ExportedZone[]
 }
 
 export interface ExportedBundle {

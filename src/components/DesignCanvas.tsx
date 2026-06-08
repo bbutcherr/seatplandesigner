@@ -3,7 +3,7 @@ import { Arc, Circle, Group, Image as KonvaImage, Layer, Line, Rect, Stage, Text
 import type Konva from 'konva'
 import type { KonvaEventObject } from 'konva/lib/Node'
 import { useDesignerStore } from '../store/useDesignerStore'
-import type { ArcBlock, FloorElement, Label } from '../types'
+import type { ArcBlock, FloorElement, Label, Zone } from '../types'
 import { useImage } from './useImage'
 import { boxOf, computeSnap, type DistMark, type Guide } from '../lib/snapping'
 import { computeCanvasSize, type ResizeEdge } from '../lib/canvasResize'
@@ -23,6 +23,7 @@ type Interaction =
   | { mode: 'move-label'; id: string; startWorld: Pt; orig: Pt }
   | { mode: 'arc-radius'; id: string }
   | { mode: 'arc-center'; id: string; last: Pt }
+  | { mode: 'move-zone'; id: string; last: Pt }
 
 export interface CanvasApi {
   rasterizeFloor: () => string | null
@@ -106,6 +107,9 @@ export function DesignCanvas({
         } else if (s.selectedLabelId) {
           e.preventDefault()
           s.deleteLabel(s.selectedLabelId)
+        } else if (s.selectedZoneId) {
+          e.preventDefault()
+          s.deleteZone(s.selectedZoneId)
         }
       }
       const mod = e.ctrlKey || e.metaKey
@@ -278,6 +282,9 @@ export function DesignCanvas({
         } else {
           interaction.current = { mode: 'none' }
         }
+      } else if (name === 'zone') {
+        s.selectZone(t.id())
+        interaction.current = { mode: 'move-zone', id: t.id(), last: world }
       } else {
         if (!e.evt.shiftKey) s.clearSelection()
         interaction.current = { mode: 'marquee', start: world, additive: e.evt.shiftKey }
@@ -288,7 +295,7 @@ export function DesignCanvas({
     } else if (s.tool === 'label') {
       s.addLabel({ text: 'Label', x: Math.round(world.x), y: Math.round(world.y) })
       s.setTool('select')
-    } else if (s.tool.startsWith('floor-')) {
+    } else if (s.tool.startsWith('floor-') || s.tool === 'zone') {
       interaction.current = { mode: 'draw', start: world }
       setDraw({ x: world.x, y: world.y, w: 0, h: 0 })
     }
@@ -410,6 +417,9 @@ export function DesignCanvas({
         x: Math.round(it.orig.x + (world.x - it.startWorld.x)),
         y: Math.round(it.orig.y + (world.y - it.startWorld.y)),
       })
+    } else if (it.mode === 'move-zone') {
+      s.moveZone(it.id, world.x - it.last.x, world.y - it.last.y)
+      it.last = world
     } else if (it.mode === 'marquee') {
       setMarquee({
         x: Math.min(it.start.x, world.x),
@@ -446,7 +456,17 @@ export function DesignCanvas({
       }
       setMarquee(null)
     } else if (it.mode === 'draw' && draw) {
-      finalizeFloorDraw(draw)
+      if (s.tool === 'zone') {
+        const x = Math.round(draw.x)
+        const y = Math.round(draw.y)
+        const w = Math.max(30, Math.round(draw.w))
+        const h = Math.max(30, Math.round(draw.h))
+        const color = plan.products.find((p) => p.id === s.activeProductId)?.color ?? '#3b82f6'
+        s.addZone({ label: 'Area', points: [x, y, x + w, y, x + w, y + h, x, y + h], color, capacity: 0 })
+        s.setTool('select')
+      } else {
+        finalizeFloorDraw(draw)
+      }
       setDraw(null)
     } else if (it.mode === 'move' && !it.moved && it.clickId) {
       // A click (no drag) on a seat isolates it — so you can pick one seat out
@@ -491,6 +511,16 @@ export function DesignCanvas({
         label: '',
         points: [0, 0, w, h],
       })
+    } else if (tool === 'floor-arc') {
+      // A curved demarcation: top half of an ellipse fitting the drag box,
+      // sampled into points (relative to x,y). Rotate it to reorient the curve.
+      const pts: number[] = []
+      const N = 28
+      for (let i = 0; i <= N; i++) {
+        const a = Math.PI + (Math.PI * i) / N // π → 2π = the upper arc
+        pts.push(Math.round(w / 2 + (w / 2) * Math.cos(a)), Math.round(h / 2 + (h / 2) * Math.sin(a)))
+      }
+      s.addFloorElement({ ...base, type: 'arc', width: w, height: h, label: '', strokeWidth: 3, points: pts })
     }
   }
 
@@ -536,6 +566,13 @@ export function DesignCanvas({
         <Layer>
           {plan.floorElements.map((el) => (
             <FloorShape key={el.id} el={el} selected={s.selectedFloorId === el.id} />
+          ))}
+        </Layer>
+
+        {/* Zones (bookable areas) */}
+        <Layer>
+          {plan.zones.map((z) => (
+            <ZoneShape key={z.id} z={z} selected={s.selectedZoneId === z.id} scale={scale} />
           ))}
         </Layer>
 
@@ -720,9 +757,9 @@ function FloorShape({ el, selected }: { el: FloorElement; selected: boolean }) {
       <Text name="floor" id={el.id} x={el.x} y={el.y} text={el.label} fontSize={el.fontSize} fontStyle="bold" fill={el.fill} rotation={el.rotation} />
     )
   }
-  if (el.type === 'line') {
+  if (el.type === 'line' || el.type === 'arc') {
     return (
-      <Line name="floor" id={el.id} x={el.x} y={el.y} points={el.points ?? [0, 0, el.width, el.height]} stroke={stroke} strokeWidth={Math.max(sw, 3)} rotation={el.rotation} hitStrokeWidth={12} />
+      <Line name="floor" id={el.id} x={el.x} y={el.y} points={el.points ?? [0, 0, el.width, el.height]} stroke={stroke} strokeWidth={Math.max(sw, 3)} rotation={el.rotation} hitStrokeWidth={12} lineCap="round" lineJoin="round" tension={el.type === 'arc' ? 0.5 : 0} />
     )
   }
   if (el.type === 'circle') {
@@ -798,6 +835,44 @@ function ArcHandles({ block, scale }: { block: ArcBlock; scale: number }) {
   )
 }
 
+function ZoneShape({ z, selected, scale }: { z: Zone; selected: boolean; scale: number }) {
+  // centroid for the label
+  let cx = 0
+  let cy = 0
+  const n = z.points.length / 2 || 1
+  for (let i = 0; i < z.points.length; i += 2) {
+    cx += z.points[i]
+    cy += z.points[i + 1]
+  }
+  cx /= n
+  cy /= n
+  return (
+    <>
+      <Line
+        name="zone"
+        id={z.id}
+        points={z.points}
+        closed
+        fill={z.color}
+        opacity={0.5}
+        stroke={selected ? '#0ea5e9' : z.color}
+        strokeWidth={(selected ? 3 : 1.5) / scale}
+      />
+      <Text
+        listening={false}
+        x={cx - 100}
+        y={cy - 24}
+        width={200}
+        align="center"
+        text={z.capacity ? `${z.label}\n${z.capacity} cap` : z.label}
+        fontSize={18}
+        fontStyle="bold"
+        fill="#f8fafc"
+      />
+    </>
+  )
+}
+
 function LabelShape({ l, selected, scale }: { l: Label; selected: boolean; scale: number }) {
   const fontStyle = [l.italic ? 'italic' : '', l.bold ? 'bold' : ''].join(' ').trim() || 'normal'
   // Approximate text box so alignment + the selection/hit boxes match the text.
@@ -859,7 +934,7 @@ function hoverCursor(target: Konva.Node, selected: Set<string>, space: boolean):
   if (space) return 'grab'
   const n = target.name()
   if (n === 'seat') return selected.has(target.id()) ? 'move' : 'pointer'
-  if (n === 'selbounds' || n === 'floor' || n === 'label' || n === 'arc-center') return 'move'
+  if (n === 'selbounds' || n === 'floor' || n === 'label' || n === 'arc-center' || n === 'zone') return 'move'
   if (n === 'arc-radius') return 'crosshair'
   if (n.startsWith('handle-')) return edgeCursor(n.slice('handle-'.length) as ResizeEdge)
   return 'default'

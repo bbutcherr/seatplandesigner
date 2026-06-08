@@ -8,6 +8,7 @@ const FLOOR_TOOLS: { tool: Tool; label: string }[] = [
   { tool: 'floor-stage', label: 'Stage' },
   { tool: 'floor-line', label: 'Wall / line' },
   { tool: 'floor-circle', label: 'Circle' },
+  { tool: 'floor-arc', label: 'Arc / curve' },
   { tool: 'floor-text', label: 'Text label' },
 ]
 

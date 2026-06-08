@@ -94,6 +94,13 @@ export function planToExported(plan: Plan): ExportedPlan {
       seat_start: b.seatStart,
       product_name: byId.get(b.productId)?.name ?? 'Unknown',
     })),
+    zones: plan.zones.map((z) => ({
+      label: z.label,
+      points: z.points.map((v) => Math.round(v)),
+      color: z.color,
+      product_name: byId.get(z.productId)?.name ?? 'Unknown',
+      capacity: z.capacity,
+    })),
   }
 }
 
